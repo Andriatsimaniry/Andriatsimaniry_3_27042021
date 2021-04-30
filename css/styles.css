@@ -1,86 +1,114 @@
-body {
+body, html {
   margin: 0;
-  padding: 0;
-  text-align: center; }
+  padding-right: 2rem;
+  box-sizing: border-box;
+}
 
-.ville {
-  position: relative; }
-
-.ville i.fas {
-  position: absolute;
-  left: -2rem;
-  bottom: 0.2rem; }
-
-.text {
-  margin-left: -8rem; }
-
-h1 {
-  font-family: "Shrikhand", cursive;
-  font-size: 22px; }
+h2 {
+  font-family: "roboto", sans-serif;
+  font-size: 18px;
+}
 
 p {
   font-family: "roboto", sans-serif;
   font-weight: 300;
-  font-size: 13px;
-  line-height: 0.5em; }
-
-h2 {
-  font-family: "roboto", sans-serif;
-  font-weight: 900;
-  font-size: 18px;
-  line-height: 0.2em; }
-
-h4 {
-  font-family: "Shrikhand", cursive;
-  font-weight: 100;
-  color: #fff; }
-
-.titre {
-  margin-top: 1em; }
-
-.titre2 {
-  margin-top: 2em; }
+  font-size: 15px;
+  color: black;
+}
 
 header {
+  height: 250px;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  text-align: center; }
+  align-items: center;
+}
 
-.explorer {
-  background-color: #ff79da;
+.headerlogo {
+  font-family: "Shrikhand", cursive;
+  font-size: 16px;
+  text-align: center;
+  margin-left: -1rem;
+}
+
+.paris {
+  font-size: 13px;
+  position: absolute;
+  left: 7.5rem;
+}
+
+.siteheader {
+  background-color: #ece6e64f;
+  height: 400px;
+  width: 300px;
+  text-align: center;
+}
+
+.siteheader-ville {
+  background-color: #eae7e7;
+  height: 40px;
+  width: 300px;
+  position: relative;
+  font-family: "roboto", sans-serif;
+  font-size: 13px;
+}
+
+.siteheader-ville > i.fas {
+  position: absolute;
+  left: 6rem;
+  top: 0.8rem;
+}
+
+.siteheader-ville-titre {
+  align-items: center;
+  font-family: "roboto", sans-serif;
+  font-size: 12px;
+  line-height: 1rem;
+  margin-top: 1rem;
+  margin-left: 2rem;
+}
+
+.siteheader-ville-titre-titre2 {
+  font-family: "roboto", sans-serif;
+  font-size: 12px;
+  line-height: 1rem;
+  margin-left: 2rem;
+}
+
+.siteheader-ville-titre-titre2 > button {
+  height: 40px;
   width: 200px;
+  border: none;
   border-radius: 20px;
+  background-color: #bd44cc;
+}
+
+.siteheader-ville-titre-titre2 > button.headerexplorer {
   color: #fff;
-  border: none; }
+}
 
 button i {
   position: absolute;
-  left: 2rem; }
-
-.title {
-  margin-left: 3rem; }
+  left: 2rem;
+  top: 0.5em;
+  color: #9356DC;
+}
 
 .choix {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; }
+  text-align: center;
+}
 
-button {
-  height: 40px;
-  width: 250px;
+.choix-restaurant {
   margin-bottom: 1rem;
-  border-radius: 10px;
+  height: 42px;
+  width: 250px;
   border: none;
-  display: flex;
-  flex-direction: row-reverse;
-  align-items: center;
-  padding-right: 2rem;
-  position: relative; }
+  border-radius: 15px;
+  position: relative;
+  padding-left: 2rem;
+}
 
-.numberCircle {
+.choix-restaurant .numberCircle {
   font: 32px "roboto", sans-serif, sans-serif;
   width: 2em;
   height: 2em;
@@ -93,76 +121,255 @@ button {
   line-height: 2em;
   box-sizing: content-box;
   position: absolute;
-  left: -1rem; }
+  left: -1rem;
+  top: 0.4em;
+}
 
-.restaurant-container {
+.choix-restaurant-menu {
+  margin-bottom: 1rem;
+  height: 42px;
+  width: 250px;
+  border: none;
+  border-radius: 15px;
+  position: relative;
+  padding-left: 2rem;
+}
+
+.choix-restaurant-menu .numberCircle {
+  font: 32px "roboto", sans-serif, sans-serif;
+  width: 2em;
+  height: 2em;
+  box-sizing: initial;
+  background: #9356DC;
+  border: 0.1em solid;
+  color: #fff;
+  text-align: center;
+  border-radius: 50%;
+  line-height: 2em;
+  box-sizing: content-box;
+  position: absolute;
+  left: -1rem;
+  top: 0.4em;
+}
+
+.choix-restaurant-menu-deguste {
+  margin-bottom: 1rem;
+  height: 42px;
+  width: 250px;
+  border: none;
+  border-radius: 15px;
+  position: relative;
+  padding-left: 2rem;
+  background-color: #f4eefc;
+}
+
+.choix-restaurant-menu-deguste .numberCircle {
+  font: 32px "roboto", sans-serif, sans-serif;
+  width: 2em;
+  height: 2em;
+  box-sizing: initial;
+  background: #9356DC;
+  border: 0.1em solid;
+  color: #fff;
+  text-align: center;
+  border-radius: 50%;
+  line-height: 2em;
+  box-sizing: content-box;
+  position: absolute;
+  left: -1rem;
+  top: 0.4em;
+}
+
+.choixlabel {
+  margin-right: 10rem;
+}
+
+.restaurant {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  margin-left: 2rem;
+}
 
-.restaurant {
-  padding-left: 1rem; }
-
-.restaurant-menu {
+.restaurant-pallette {
+  margin-bottom: 1rem;
   background-color: #fff;
   margin-top: 25px;
-  height: 200px;
-  width: auto;
-  margin-right: 25px;
+  height: 250px;
+  width: 300px;
   border-radius: 15px;
   box-shadow: 0 0 6px 3px #b1b1b14b;
   transition: box-shadow 0.2s;
   padding: 3px;
-  position: relative; }
+  position: relative;
+}
 
-.restaurant-menu img {
-  object-fit: cover;
-  height: 70%;
-  width: 340px;
-  border-radius: 15px; }
-
-.restaurant-menu i.far {
+.restaurant-pallette i.far {
   position: absolute;
-  left: 18rem;
-  bottom: 1rem; }
+  left: 16rem;
+  bottom: 2rem;
+  color: black;
+}
+
+.restaurant-pallette-charonne {
+  margin-bottom: 1rem;
+  background-color: #fff;
+  margin-top: 25px;
+  height: 250px;
+  width: 300px;
+  border-radius: 15px;
+  box-shadow: 0 0 6px 3px #b1b1b14b;
+  transition: box-shadow 0.2s;
+  padding: 3px;
+  position: relative;
+}
+
+.restaurant-pallette-charonne i.far {
+  position: absolute;
+  left: 16rem;
+  bottom: 2rem;
+  color: black;
+}
+
+.restaurant-pallette-charonne-cite {
+  background-color: #fff;
+  margin-top: 25px;
+  height: 250px;
+  width: 300px;
+  border-radius: 15px;
+  box-shadow: 0 0 6px 3px #b1b1b14b;
+  transition: box-shadow 0.2s;
+  padding: 3px;
+  position: relative;
+}
+
+.restaurant-pallette-charonne-cite i.far {
+  position: absolute;
+  left: 16rem;
+  bottom: 2rem;
+  color: black;
+}
+
+.restaurant-pallette-charonne-cite-folie {
+  background-color: #fff;
+  margin-top: 25px;
+  height: 250px;
+  width: 300px;
+  border-radius: 15px;
+  box-shadow: 0 0 6px 3px #b1b1b14b;
+  transition: box-shadow 0.2s;
+  padding: 3px;
+  position: relative;
+}
+
+.restaurant-pallette-charonne-cite-folie i.far {
+  position: absolute;
+  left: 16rem;
+  bottom: 2rem;
+  color: black;
+}
 
 a:link {
-  text-decoration: none; }
+  text-decoration: none;
+}
 
 .text {
-  color: black; }
+  color: black;
+}
+
+.menu img {
+  object-fit: cover;
+  height: 70%;
+  width: 300px;
+  border-radius: 15px;
+}
 
 .resto {
-  color: black;
-  margin-right: 12rem; }
+  font-family: "roboto", sans-serif;
+  margin-top: -0.5rem;
+}
 
-footer {
-  background-color: grey;
+.button-nouveau {
+  position: absolute;
+  background-color: #99E2D0;
+  top: 1rem;
+  right: 1rem;
+  height: 40px;
+  width: 100px;
+  border: none;
+  border-radius: 5px;
+  font-family: "roboto", sans-serif;
+  font-size: 15px;
+  color: #45675e;
+  font-weight: bold;
+}
+
+.container {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  justify-content: center;
+  width: 500px;
+}
+
+.pied {
+  background-color: #251f1f;
+  top: 2rem;
+  left: 2rem;
+  font-family: "Shrikhand", cursive;
+  position: relative;
+  height: 200px;
   width: 400px;
-  margin-top: 0.2rem; }
+  color: #fff;
+}
 
-ul {
-  list-style-type: none;
-  margin-top: 1rem;
-  color: #fff; }
-
-.list {
-  position: relative; }
-
-.list i.fas {
+.pied-proposer {
   position: absolute;
-  left: 0rem;
-  top: -0.4rem;
-  color: #fff; }
+  left: 2rem;
+  top: 3rem;
+  color: #fff;
+  font-family: "roboto", sans-serif;
+  font-size: 14px;
+}
 
-.partenaire i.fa {
+.pied-proposer > i.fas {
   position: absolute;
-  left: 0rem;
-  top: 1rem;
-  color: #fff; }
+  top: 0rem;
+  left: -1rem;
+}
 
+.pied-proposer-partenaire {
+  position: absolute;
+  top: 5rem;
+  left: 2.5rem;
+  color: #fff;
+  font-family: "roboto", sans-serif;
+  font-size: 14px;
+}
+
+.pied-proposer-partenaire > i.fa {
+  position: absolute;
+  top: 0rem;
+  left: -1.5rem;
+  transform: rotate(-45deg);
+}
+
+.pied-proposer-partenaire-legale {
+  position: absolute;
+  top: 7rem;
+  left: 1rem;
+  color: #fff;
+  font-family: "roboto", sans-serif;
+  font-size: 14px;
+}
+
+.pied-proposer-partenaire-legale-contact {
+  position: absolute;
+  top: 9rem;
+  left: 1rem;
+  color: #fff;
+  font-family: "roboto", sans-serif;
+  font-size: 14px;
+}
 /*# sourceMappingURL=styles.css.map */
