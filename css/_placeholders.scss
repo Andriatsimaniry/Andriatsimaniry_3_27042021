@@ -1,0 +1,77 @@
+%flex-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+%pied-page {
+    .container{
+        @extend %flex-center;   
+        width: auto;
+        .piedlogo{
+            font-family: $titre;
+            font-size: 14px;
+            margin-left: 1rem;
+            font-weight: 100;
+        }
+    
+    .pied{
+        
+        background-color:#251f1f;
+        top: 2rem;
+        left: 2rem;    
+        font-family: $titre;
+        position: relative;
+        height: 200px;
+        width: 400px;
+        color: #fff;
+    
+        &-proposer{
+            position: absolute;
+            left: 2rem;
+            top: 3rem;
+            color: #fff;
+            font-family: $texte;
+            font-size: 14px;
+        >i.fas{
+                position: absolute;
+                top: 0rem;
+                left: -1rem;
+            }
+        &-partenaire{
+            position: absolute;
+            top: 5rem;
+            left: 2.5rem;
+            color: #fff;
+            font-family: $texte;
+            font-size: 14px;
+        >i.fa{
+                position: absolute;
+                top: 0rem;
+                left: -1.5rem;
+                transform:rotate(-45deg)
+            }
+        &-legale{
+            position: absolute;
+            top: 7rem;
+            left: 1rem;
+            color: #fff;
+            font-family: $texte;
+            font-size: 14px;
+        &-contact{
+            position: absolute;
+            top: 9rem;
+            left: 1rem;
+            color: #fff;
+            font-family: $texte;
+            font-size: 14px;
+        
+        }
+        }
+        }
+    
+    }   
+    }
+    }
+}

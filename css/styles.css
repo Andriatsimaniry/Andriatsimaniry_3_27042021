@@ -1,3 +1,81 @@
+footer .container, .restaurant {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .container {
+  width: auto;
+}
+
+footer .container .piedlogo {
+  font-family: "Shrikhand", cursive;
+  font-size: 14px;
+  margin-left: 1rem;
+  font-weight: 100;
+}
+
+footer .container .pied {
+  background-color: #251f1f;
+  top: 2rem;
+  left: 2rem;
+  font-family: "Shrikhand", cursive;
+  position: relative;
+  height: 200px;
+  width: 400px;
+  color: #fff;
+}
+
+footer .container .pied-proposer {
+  position: absolute;
+  left: 2rem;
+  top: 3rem;
+  color: #fff;
+  font-family: "roboto", sans-serif;
+  font-size: 14px;
+}
+
+footer .container .pied-proposer > i.fas {
+  position: absolute;
+  top: 0rem;
+  left: -1rem;
+}
+
+footer .container .pied-proposer-partenaire {
+  position: absolute;
+  top: 5rem;
+  left: 2.5rem;
+  color: #fff;
+  font-family: "roboto", sans-serif;
+  font-size: 14px;
+}
+
+footer .container .pied-proposer-partenaire > i.fa {
+  position: absolute;
+  top: 0rem;
+  left: -1.5rem;
+  transform: rotate(-45deg);
+}
+
+footer .container .pied-proposer-partenaire-legale {
+  position: absolute;
+  top: 7rem;
+  left: 1rem;
+  color: #fff;
+  font-family: "roboto", sans-serif;
+  font-size: 14px;
+}
+
+footer .container .pied-proposer-partenaire-legale-contact {
+  position: absolute;
+  top: 9rem;
+  left: 1rem;
+  color: #fff;
+  font-family: "roboto", sans-serif;
+  font-size: 14px;
+}
+
 body, html {
   margin: 0;
   padding-right: 2rem;
@@ -184,12 +262,13 @@ button i {
   margin-right: 10rem;
 }
 
+.restolabel {
+  margin-right: 13rem;
+  margin-bottom: -1rem;
+}
+
 .restaurant {
   position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   margin-left: 2rem;
 }
 
@@ -304,72 +383,5 @@ a:link {
   font-size: 15px;
   color: #45675e;
   font-weight: bold;
-}
-
-.container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 500px;
-}
-
-.pied {
-  background-color: #251f1f;
-  top: 2rem;
-  left: 2rem;
-  font-family: "Shrikhand", cursive;
-  position: relative;
-  height: 200px;
-  width: 400px;
-  color: #fff;
-}
-
-.pied-proposer {
-  position: absolute;
-  left: 2rem;
-  top: 3rem;
-  color: #fff;
-  font-family: "roboto", sans-serif;
-  font-size: 14px;
-}
-
-.pied-proposer > i.fas {
-  position: absolute;
-  top: 0rem;
-  left: -1rem;
-}
-
-.pied-proposer-partenaire {
-  position: absolute;
-  top: 5rem;
-  left: 2.5rem;
-  color: #fff;
-  font-family: "roboto", sans-serif;
-  font-size: 14px;
-}
-
-.pied-proposer-partenaire > i.fa {
-  position: absolute;
-  top: 0rem;
-  left: -1.5rem;
-  transform: rotate(-45deg);
-}
-
-.pied-proposer-partenaire-legale {
-  position: absolute;
-  top: 7rem;
-  left: 1rem;
-  color: #fff;
-  font-family: "roboto", sans-serif;
-  font-size: 14px;
-}
-
-.pied-proposer-partenaire-legale-contact {
-  position: absolute;
-  top: 9rem;
-  left: 1rem;
-  color: #fff;
-  font-family: "roboto", sans-serif;
-  font-size: 14px;
 }
 /*# sourceMappingURL=styles.css.map */
