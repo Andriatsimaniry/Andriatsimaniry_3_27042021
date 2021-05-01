@@ -1,12 +1,7 @@
 @media screen and (max-width: 425px){}
-$primaire : #9356DC;
-$light:lighten($primaire,36%);
-$secondaire:#ff79da;
-$colour:darken($primaire,9%);
-$tertiaire:#99E2D0;
-$tertiaireB:darken($tertiaire,20%);
-$texte: 'roboto', sans-serif;
-$titre:'Shrikhand', cursive;
+@import './_variables';
+@import './_mixins';
+@import './_placeholders';
 
 
 body,html{
@@ -46,12 +41,12 @@ header{
 }
     
 .siteheader{
-    background-color: #ece6e64f;
+    background-color:$fond-sombre;
     height: 400px;
     width: 300px;
     text-align: center;
     &-ville{
-        background-color:#eae7e7;
+        background-color:$fond-clair;
         height: 40px;
         width: 300px;
         position: relative;
@@ -94,32 +89,8 @@ header{
     }
     }
 }
-@mixin button {
-    height: 42px;
-    width: 250px;
-    border: none;
-    border-radius: 15px;
-    position: relative;
-    padding-left: 2rem;
-.numberCircle{
-    font: 32px $texte, sans-serif;
-        width: 2em;
-        height: 2em;
-        box-sizing: initial;
-        background:$primaire;
-        border: 0.1em solid;
-        color: #fff;
-        text-align: center;
-        border-radius: 50%;    
-        line-height: 2em;  
-        box-sizing: content-box;  
-        position: absolute;
-        left: -1rem; 
-        top: 0.4em;
-    
 
-}
-}
+
 button i{
     position: absolute;
     left: 2rem;
@@ -151,36 +122,10 @@ text-align: center;
     margin-right:10rem;
 }
 
-
-
-@mixin menu{
-    background-color: #fff;
-    margin-top: 25px;
-    height:250px;
-    width:300px ;
-    border-radius: 15px;
-    box-shadow: 0 0 6px 3px #b1b1b14b;
-    transition: box-shadow 0.2s;
-    padding:3px;
-    position:relative;
-i.far{
-        position: absolute;
-        left: 16rem;
-        bottom: 2rem;
-        color: black;
-
-    
-}
-
-    
-}
 .restaurant{
+    @extend %flex-center;
     position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-left: 2rem;
+   margin-left: 2rem;
     &-pallette{
         margin-bottom: 1rem;
         @include menu;
@@ -231,9 +176,7 @@ a:link{
     
 }
 .container{
-    display: flex;
-    flex-direction:column ;
-    justify-content: center;
+    @extend %flex-center;
     width: 500px;
 }
 .pied{
