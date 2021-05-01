@@ -1,0 +1,142 @@
+footer .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .container {
+  width: auto;
+}
+
+footer .container .piedlogo {
+  font-family: "Shrikhand", cursive;
+  font-size: 14px;
+  margin-left: 1rem;
+  font-weight: 100;
+}
+
+footer .container .pied {
+  background-color: #251f1f;
+  top: 2rem;
+  left: 2rem;
+  font-family: "Shrikhand", cursive;
+  position: relative;
+  height: 200px;
+  width: 400px;
+  color: #fff;
+}
+
+footer .container .pied-proposer {
+  position: absolute;
+  left: 2.5rem;
+  top: 3rem;
+  color: #fff;
+  font-family: "roboto", sans-serif;
+  font-size: 14px;
+}
+
+footer .container .pied-proposer > i.fas {
+  position: absolute;
+  top: 0rem;
+  left: -1.5rem;
+}
+
+footer .container .pied-proposer-partenaire {
+  position: absolute;
+  top: 5rem;
+  left: 2.5rem;
+  color: #fff;
+  font-family: "roboto", sans-serif;
+  font-size: 14px;
+}
+
+footer .container .pied-proposer-partenaire > i.fa {
+  position: absolute;
+  top: 0rem;
+  left: -1.5rem;
+  transform: rotate(-45deg);
+}
+
+footer .container .pied-proposer-partenaire-legale {
+  position: absolute;
+  top: 7rem;
+  left: 1rem;
+  color: #fff;
+  font-family: "roboto", sans-serif;
+  font-size: 14px;
+}
+
+footer .container .pied-proposer-partenaire-legale-contact {
+  position: absolute;
+  top: 9rem;
+  left: 1rem;
+  color: #fff;
+  font-family: "roboto", sans-serif;
+  font-size: 14px;
+}
+
+p {
+  font-family: "roboto", sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  color: black;
+}
+
+h2 {
+  font-family: "roboto", sans-serif;
+  font-size: 18px;
+}
+
+body, html {
+  margin: 0;
+  padding-right: 0;
+  box-sizing: border-box;
+}
+
+header .header-logo {
+  font-family: "Shrikhand", cursive;
+  font-size: 18px;
+  text-align: center;
+  left: 12rem;
+}
+
+.logo {
+  position: absolute;
+  left: 12rem;
+}
+
+header .header-logo-retour {
+  color: black;
+  font-size: 18px;
+  position: absolute;
+  top: 2.3rem;
+  left: 9rem;
+}
+
+header .header-logo-retour-plat {
+  background-color: #fff;
+  margin-top: 25px;
+  height: 250px;
+  width: 350px;
+  box-shadow: 0 0 6px 3px #b1b1b14b;
+  transition: box-shadow 0.2s;
+  padding: 3px;
+  position: absolute;
+  position: absolute;
+  left: 8rem;
+  top: 3rem;
+}
+
+header .header-logo-retour-plat > img {
+  object-fit: cover;
+  height: auto;
+  width: auto;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 6rem;
+}
+/*# sourceMappingURL=palette.css.map */

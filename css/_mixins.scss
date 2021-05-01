@@ -44,3 +44,37 @@ i.far{
 
     
 }
+@mixin plat {
+    background-color: #fff;
+    margin-top: 25px;
+    height:250px;
+    width:350px ;
+    box-shadow: 0 0 6px 3px #b1b1b14b;
+    transition: box-shadow 0.2s;
+    padding:3px;
+    position:absolute;
+    >img{
+        object-fit: cover;
+        height: auto;
+        width: auto;
+    }
+}
+
+@mixin entete{
+    .header-logo{
+        @extend %titre-logo;
+    &-retour{
+        color: black;
+        font-size: 18px;
+        position:absolute;
+        top: 2.3rem;
+        left: 9rem;
+    &-plat{
+        @include plat;
+        position: absolute;
+        left: 8rem;
+        top: 3rem;
+    }
+    }
+    }
+}

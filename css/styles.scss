@@ -5,33 +5,21 @@
 
 
 body,html{
-    margin: 0;
-    padding-right: 2rem;
-    box-sizing: border-box;
+@extend %marge-principale;
 }
 h2{
-    font-family: $texte;
-    font-size: 18px;
+@extend %titre2;
 }
 p {
-    font-family: $texte;
-    font-weight: 300;
-    font-size: 15px;
-    color: black;
+@extend %paragraphe;
 }
 header{
-    height: 250px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+height: 250px;
+@extend %flex-center;
     
 }
 .headerlogo{
-    font-family: $titre;
-    font-size: 16px;
-    text-align: center;
-    margin-left: -1rem;
+@extend %titre-logo;
 
 }
 .paris{
@@ -41,12 +29,12 @@ header{
 }
     
 .siteheader{
-    background-color:$fond-sombre;
+    background-color:$fond-clair;
     height: 400px;
     width: 300px;
     text-align: center;
     &-ville{
-        background-color:$fond-clair;
+        background-color:$fond-sombre;
         height: 40px;
         width: 300px;
         position: relative;
@@ -79,12 +67,13 @@ header{
         width: 200px;
         border: none;
         border-radius:20px;
-        background-color:#bd44cc;
+        background:$fond-button-degrader;
     &.headerexplorer{
          color: #fff;
      }
     }
     }
+    
         
     }
     }
@@ -127,6 +116,7 @@ text-align: center;
 }
 
 .restaurant{
+    background-color:$fond-clair;
     @extend %flex-center;
     position: relative;
    margin-left: 2rem;
@@ -182,4 +172,3 @@ a:link{
 footer{
 @extend %pied-page;
 }
-

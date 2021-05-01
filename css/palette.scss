@@ -1,0 +1,26 @@
+@media screen and (max-width: 425px){}
+@import './_variables';
+@import './_mixins';
+@import './_placeholders';
+body,html{
+    @extend %marge-principale;
+}
+p{
+    @extend %paragraphe;
+}
+h2{
+    @extend %titre2;
+}
+.logo{
+    position: absolute;
+    left: 12rem;
+}
+header{
+    @include entete;
+}
+footer{
+    position: absolute;
+    bottom: 0;
+    left: 6rem;
+    @extend %pied-page;
+}

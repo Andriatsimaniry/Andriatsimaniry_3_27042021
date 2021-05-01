@@ -1,5 +1,5 @@
 {
-  "name": "projet_3_ohmyfood",
+  "name": "andriatsimaniry",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -11,5 +11,13 @@
     "sass": "sass --watch ./css/styles.scss:./css/styles.css"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Andriatsimaniry/Andriatsimaniry_3_27042021.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Andriatsimaniry/Andriatsimaniry_3_27042021/issues"
+  },
+  "homepage": "https://github.com/Andriatsimaniry/Andriatsimaniry_3_27042021#readme"
 }

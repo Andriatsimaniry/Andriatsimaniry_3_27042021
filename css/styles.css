@@ -1,4 +1,4 @@
-footer .container, .restaurant {
+footer .container, header, .restaurant {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -29,7 +29,7 @@ footer .container .pied {
 
 footer .container .pied-proposer {
   position: absolute;
-  left: 2rem;
+  left: 2.5rem;
   top: 3rem;
   color: #fff;
   font-family: "roboto", sans-serif;
@@ -39,7 +39,7 @@ footer .container .pied-proposer {
 footer .container .pied-proposer > i.fas {
   position: absolute;
   top: 0rem;
-  left: -1rem;
+  left: -1.5rem;
 }
 
 footer .container .pied-proposer-partenaire {
@@ -76,17 +76,6 @@ footer .container .pied-proposer-partenaire-legale-contact {
   font-size: 14px;
 }
 
-body, html {
-  margin: 0;
-  padding-right: 2rem;
-  box-sizing: border-box;
-}
-
-h2 {
-  font-family: "roboto", sans-serif;
-  font-size: 18px;
-}
-
 p {
   font-family: "roboto", sans-serif;
   font-weight: 300;
@@ -94,19 +83,26 @@ p {
   color: black;
 }
 
-header {
-  height: 250px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+h2 {
+  font-family: "roboto", sans-serif;
+  font-size: 18px;
+}
+
+body, html {
+  margin: 0;
+  padding-right: 0;
+  box-sizing: border-box;
 }
 
 .headerlogo {
   font-family: "Shrikhand", cursive;
-  font-size: 16px;
+  font-size: 18px;
   text-align: center;
-  margin-left: -1rem;
+  left: 12rem;
+}
+
+header {
+  height: 250px;
 }
 
 .paris {
@@ -123,7 +119,7 @@ header {
 }
 
 .siteheader-ville {
-  background-color: #eae7e7;
+  background-color: #bdb8b84f;
   height: 40px;
   width: 300px;
   position: relative;
@@ -158,7 +154,7 @@ header {
   width: 200px;
   border: none;
   border-radius: 20px;
-  background-color: #bd44cc;
+  background: linear-gradient(#ea6fa2b5, #9356DC);
 }
 
 .siteheader-ville-titre-titre2 > button.headerexplorer {
@@ -268,6 +264,7 @@ button i {
 }
 
 .restaurant {
+  background-color: #ece6e64f;
   position: relative;
   margin-left: 2rem;
 }

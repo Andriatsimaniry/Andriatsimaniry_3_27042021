@@ -1,3 +1,5 @@
+
+
 %flex-center {
     display: flex;
     flex-direction: column;
@@ -29,7 +31,7 @@
     
         &-proposer{
             position: absolute;
-            left: 2rem;
+            left: 2.5rem;
             top: 3rem;
             color: #fff;
             font-family: $texte;
@@ -37,7 +39,7 @@
         >i.fas{
                 position: absolute;
                 top: 0rem;
-                left: -1rem;
+                left: -1.5rem;
             }
         &-partenaire{
             position: absolute;
@@ -74,4 +76,27 @@
     }   
     }
     }
+}
+
+%paragraphe {
+    font-family: $texte;
+    font-weight: 300;
+    font-size: 15px;
+    color: black;
+}
+%titre2{
+    font-family: $texte;
+    font-size: 18px;
+}
+%marge-principale{
+    margin: 0;
+    padding-right: 0;
+    box-sizing: border-box;
+}
+%titre-logo{
+    font-family: $titre;
+    font-size: 18px;
+   text-align: center;
+    left: 12rem;
+   
 }
