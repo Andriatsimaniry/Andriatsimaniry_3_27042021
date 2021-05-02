@@ -92,13 +92,18 @@
             color: #fff;
             font-family: $texte;
             font-size: 14px;
-        &-contact{
+        &-contact {
             position: absolute;
             top: 9rem;
             left: 1rem;
-            color: #fff;
+            
             font-family: $texte;
             font-size: 14px;
+            a{
+                text-decoration: none;
+                color: #fff;
+            }
+            
         
         }
         }

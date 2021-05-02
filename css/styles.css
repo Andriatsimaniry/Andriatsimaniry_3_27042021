@@ -96,9 +96,13 @@ footer .container .pied-proposer-partenaire-legale-contact {
   position: absolute;
   top: 9rem;
   left: 1rem;
-  color: #fff;
   font-family: "roboto", sans-serif;
   font-size: 14px;
+}
+
+footer .container .pied-proposer-partenaire-legale-contact a {
+  text-decoration: none;
+  color: #fff;
 }
 
 header {

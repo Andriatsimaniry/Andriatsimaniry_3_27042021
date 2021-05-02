@@ -96,9 +96,13 @@ footer .container .pied-proposer-partenaire-legale-contact {
   position: absolute;
   top: 9rem;
   left: 1rem;
-  color: #fff;
   font-family: "roboto", sans-serif;
   font-size: 14px;
+}
+
+footer .container .pied-proposer-partenaire-legale-contact a {
+  text-decoration: none;
+  color: #fff;
 }
 
 header .header-logo .logo {
@@ -143,7 +147,7 @@ main .menu-box {
   background-color: #fff;
   margin-top: -2rem;
   margin-left: -3.5rem;
-  height: 1280px;
+  height: 1360px;
   width: 400px;
   border-radius: 40px 40px 0 0;
   box-shadow: 0 0 6px 3px #b1b1b14b;
@@ -186,7 +190,7 @@ main .menu-box .prix {
 main .menu-box .commander-btn {
   position: absolute;
   border: none;
-  top: 75.5rem;
+  top: 80.8rem;
   left: 5rem;
   width: 235px;
   height: 65px;
@@ -204,7 +208,7 @@ main .menu-box .commander-btn > i.fa {
 
 footer {
   position: absolute;
-  top: 96rem;
+  top: 101rem;
   left: 4.5rem;
 }
 /*# sourceMappingURL=palette.css.map */
