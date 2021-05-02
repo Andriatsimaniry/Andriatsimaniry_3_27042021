@@ -11,16 +11,18 @@ p{
 h2{
     @extend %titre2;
 }
-.logo{
-    position: absolute;
-    left: 12rem;
-}
+
 header{
     @include entete;
 }
+
+main{
+    @include main-menu;
+}
+
 footer{
-    position: absolute;
-    bottom: 0;
-    left: 6rem;
     @extend %pied-page;
+    position: absolute;
+    top: 96rem;
+    left: 4.5rem;
 }

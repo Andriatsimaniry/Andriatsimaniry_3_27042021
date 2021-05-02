@@ -1,4 +1,33 @@
+//  ====== PARAGRAPHE P  ========
 
+%paragraphe {
+    font-family: $texte;
+    font-weight: 300;
+    font-size: 15px;
+    color: black;
+}
+ //  ======== BODY  HTML  ========
+
+ %marge-principale{
+    margin: 0;
+    padding-right: 0;
+    box-sizing: border-box;
+}
+//  ======= h2 =============
+%titre2{
+    font-family: $texte;
+    font-size: 18px;
+}
+ //  =======LOGO ACCEUIL ========
+
+%titre-logo{
+    font-family: $titre;
+    font-size: 18px;
+   text-align: center;
+    left: 12rem;
+   
+}
+//  ====== DISPLAY FLEX  ==========
 
 %flex-center {
     display: flex;
@@ -6,6 +35,8 @@
     justify-content: center;
     align-items: center;
 }
+
+//  ======== FOOTER DE TOUS LES PAGES ======
 
 %pied-page {
     .container{
@@ -78,25 +109,4 @@
     }
 }
 
-%paragraphe {
-    font-family: $texte;
-    font-weight: 300;
-    font-size: 15px;
-    color: black;
-}
-%titre2{
-    font-family: $texte;
-    font-size: 18px;
-}
-%marge-principale{
-    margin: 0;
-    padding-right: 0;
-    box-sizing: border-box;
-}
-%titre-logo{
-    font-family: $titre;
-    font-size: 18px;
-   text-align: center;
-    left: 12rem;
-   
-}
+

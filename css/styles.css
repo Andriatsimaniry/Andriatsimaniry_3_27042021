@@ -1,3 +1,28 @@
+p {
+  font-family: "roboto", sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  color: black;
+}
+
+body, html {
+  margin: 0;
+  padding-right: 0;
+  box-sizing: border-box;
+}
+
+h2 {
+  font-family: "roboto", sans-serif;
+  font-size: 18px;
+}
+
+.headerlogo {
+  font-family: "Shrikhand", cursive;
+  font-size: 18px;
+  text-align: center;
+  left: 12rem;
+}
+
 footer .container, header, .restaurant {
   display: flex;
   flex-direction: column;
@@ -74,31 +99,6 @@ footer .container .pied-proposer-partenaire-legale-contact {
   color: #fff;
   font-family: "roboto", sans-serif;
   font-size: 14px;
-}
-
-p {
-  font-family: "roboto", sans-serif;
-  font-weight: 300;
-  font-size: 15px;
-  color: black;
-}
-
-h2 {
-  font-family: "roboto", sans-serif;
-  font-size: 18px;
-}
-
-body, html {
-  margin: 0;
-  padding-right: 0;
-  box-sizing: border-box;
-}
-
-.headerlogo {
-  font-family: "Shrikhand", cursive;
-  font-size: 18px;
-  text-align: center;
-  left: 12rem;
 }
 
 header {
