@@ -1,4 +1,4 @@
-@media screen and (max-width: 425px){}
+
 @import './_variables';
 @import './_mixins';
 @import './_placeholders';
@@ -79,7 +79,7 @@ height: 250px;
 button i{
     position: absolute;
     left: 2rem;
-    top: 0.5em; 
+    top: 0.9rem;
     color: $primaire;
           
 }
@@ -90,23 +90,16 @@ button:hover{
 
 .choix{
 text-align: center;
-    &-restaurant{
-        margin-bottom: 1rem;
-        @include button;
-        
-    &-menu{
-        margin-bottom: 1rem;
-        @include button;
-    &-deguste{
-        margin-bottom: 1rem;
-        @include button;
+.choix-restaurant{
+box-shadow: 2px 2px 6px 0 rgba(0,0,0,0.5);
+ margin-bottom: 1rem;
+@include button;
+      }
+      .choix-restaurant:hover{
+        box-shadow: 8px 8px 10px 0 rgba(0,0,0,0.5);
         background-color: $light;
-    }
-
-    }
-}
-
-}
+      }
+  }
 .choixlabel{
     margin-right:10rem;
 }
@@ -119,22 +112,9 @@ text-align: center;
     background-color:$fond-clair;
     @extend %flex-center;
     position: relative;
-   margin-left: 2rem;
-    &-pallette{
-        margin-bottom: 1rem;
+.restaurant-box {
         @include menu;
-    &-charonne{
-        margin-bottom: 1rem;
-        @include menu;
-    &-cite{
-        @include menu;
-    &-folie{
-        @include menu;
-        }
-    }
-
-    }
-    }
+    }                       
 }
 a:link{
     text-decoration: none;
@@ -142,12 +122,7 @@ a:link{
 .text{
     color: black;
 }
-.menu img {
-    object-fit: cover;
-    height: 70%;
-    width: 300px;
-    border-radius: 15px;
-}
+
 .resto{
     font-family: $texte;
     margin-top: -0.5rem;

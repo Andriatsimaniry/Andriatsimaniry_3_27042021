@@ -1,12 +1,13 @@
 //====== BOUTTON  FONCTIONNEMENT ACCEUIL =======
 
 @mixin button {
-    height: 42px;
+    height: 48px;
     width: 250px;
     border: none;
     border-radius: 15px;
     position: relative;
     padding-left: 2rem;
+  
 .numberCircle{
     font: 32px $texte, sans-serif;
         width: 2em;
@@ -21,7 +22,8 @@
         box-sizing: content-box;  
         position: absolute;
         left: -1rem; 
-        top: 0.4em;
+        top: 0.7em;
+        
 }
 
 }
@@ -29,18 +31,26 @@
 
 @mixin menu{
     background-color: #fff;
-    margin-top: 25px;
     height:250px;
-    width:300px ;
+    width:320px ;
     border-radius: 15px;
     box-shadow: 0 0 6px 3px #b1b1b14b;
     transition: box-shadow 0.2s;
     padding:3px;
     position:relative;
+    top: 3rem;
+    margin-bottom: 2rem;
+    .menu img {
+        object-fit: cover;
+        height: 70%;
+        width: 100%;
+        border-radius: 15px;
+    }
+
 i.far{
         position: absolute;
         left: 16rem;
-        bottom: 2rem;
+        bottom: 1rem;
         color: black;
 
     
@@ -52,8 +62,8 @@ i.far{
     background-color: #fff;
     margin-top: 2rem;
     margin-left: -1.5rem;
-    height:250px;
-    width:400px ;
+    height:100%;
+    width:100%;
     box-shadow: 0 0 6px 3px #b1b1b14b;
     transition: box-shadow 0.2s;
     position:absolute;
@@ -158,4 +168,14 @@ i.far{
     color:#fff;
     background:$degrader;
 
+}
+.prix{
+    position: absolute;
+	left: 0;
+	transition: left 1s, transform 1s;
+	white-space: nowrap;
+}
+.prix:hover{
+left: 100%;
+transform: translateX(-100%);
 }

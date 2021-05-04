@@ -1,3 +1,15 @@
+.prix {
+  position: absolute;
+  left: 0;
+  transition: left 1s, transform 1s;
+  white-space: nowrap;
+}
+
+.prix:hover {
+  left: 100%;
+  transform: translateX(-100%);
+}
+
 p {
   font-family: "roboto", sans-serif;
   font-weight: 300;
@@ -43,12 +55,12 @@ footer .container .piedlogo {
 
 footer .container .pied {
   background-color: #251f1f;
-  top: 2rem;
-  left: 2rem;
+  top: 5rem;
+  left: 0rem;
   font-family: "Shrikhand", cursive;
   position: relative;
   height: 200px;
-  width: 400px;
+  width: 320px;
   color: #fff;
 }
 
@@ -122,8 +134,8 @@ header .header-logo-retour-plat {
   background-color: #fff;
   margin-top: 2rem;
   margin-left: -1.5rem;
-  height: 250px;
-  width: 400px;
+  height: 100%;
+  width: 100%;
   box-shadow: 0 0 6px 3px #b1b1b14b;
   transition: box-shadow 0.2s;
   position: absolute;

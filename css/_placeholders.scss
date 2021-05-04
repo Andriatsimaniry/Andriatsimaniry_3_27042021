@@ -52,12 +52,12 @@
     .pied{
         
         background-color:#251f1f;
-        top: 2rem;
-        left: 2rem;    
+        top: 5rem;
+        left: 0rem;    
         font-family: $titre;
         position: relative;
         height: 200px;
-        width: 400px;
+        width: 320px;
         color: #fff;
     
         &-proposer{
@@ -114,11 +114,8 @@
     }
 }
 
-//  ==== REMPLISSAGE DU  COEUR AU PASAGE DU SOURIS  ====
 
-%heart-transition{
-    
-    
-}
+
+
 
 
