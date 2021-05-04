@@ -161,7 +161,7 @@ header {
   background: linear-gradient(#ea6fa2b5, #9356DC);
 }
 
-.siteheader-ville-titre-titre2 > button.headerexplorer {
+.headerexplorer {
   color: #fff;
 }
 
@@ -170,6 +170,11 @@ button i {
   left: 2rem;
   top: 0.5em;
   color: #9356DC;
+}
+
+button:hover {
+  box-shadow: 8px 8px 10px 0 rgba(0, 0, 0, 0.5);
+  opacity: 0.7;
 }
 
 .choix {
@@ -384,5 +389,27 @@ a:link {
   font-size: 15px;
   color: #45675e;
   font-weight: bold;
+}
+
+.fa-heart {
+  position: relative;
+  border-radius: 50%;
+  font-size: 24px;
+}
+
+.fa-heart::after {
+  color: transparent;
+  content: "\f004";
+  font-weight: bold;
+  transition: color 1s ease-out;
+  position: absolute;
+  font-size: 30px;
+  top: -0.1em;
+  right: -0.1em;
+}
+
+.fa-heart:hover::after {
+  color: #ff79da;
+  cursor: pointer;
 }
 /*# sourceMappingURL=styles.css.map */

@@ -201,14 +201,14 @@ main .menu-box .commander-btn {
   background: linear-gradient(#ea6fa2b5, #9356DC);
 }
 
-main .menu-box .commander-btn > i.fa {
-  position: absolute;
-  top: 2.5rem;
-}
-
 footer {
   position: absolute;
   top: 101rem;
   left: 4.5rem;
+}
+
+button:hover {
+  box-shadow: 8px 8px 10px 0 rgba(0, 0, 0, 0.5);
+  opacity: 0.7;
 }
 /*# sourceMappingURL=palette.css.map */
