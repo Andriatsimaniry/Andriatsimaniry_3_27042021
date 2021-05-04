@@ -1,4 +1,4 @@
-//====== BOUTTON  ACCEUIL FONCTIONNEMENT =======
+//====== BOUTTON  FONCTIONNEMENT ACCEUIL =======
 
 @mixin button {
     height: 42px;
@@ -25,7 +25,7 @@
 }
 
 }
-// ========    ACCEUIL IMAGES DES RESTAURANTS ============
+// ======== IMAGES DES RESTAURANTS ACCEUIL ============
 
 @mixin menu{
     background-color: #fff;
@@ -90,7 +90,7 @@ i.far{
     }
 }
 
-// ==========  MENUS DES TOUS LES  RESTAURANTS
+// ==========  MENUS DES TOUS LES  RESTAURANTS =======
 @mixin main-menu {
     .menu-box{
         @extend %flex-center;
@@ -156,12 +156,6 @@ i.far{
     font-size: 18px;
     font-family: $texte;
     color:#fff;
-    background:$fond-button-degrader;
-    
-  >i.fa{
-      position: absolute;
-      top: 2.5rem;
-      
-      
-  }
+    background:$degrader;
+
 }
