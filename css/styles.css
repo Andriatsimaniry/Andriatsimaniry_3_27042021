@@ -13,19 +13,19 @@
 p {
   font-family: "roboto", sans-serif;
   font-weight: 300;
-  font-size: 15px;
+  font-size: 13px;
   color: black;
 }
 
 body, html {
   margin: 0;
-  padding-right: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
 h2 {
   font-family: "roboto", sans-serif;
-  font-size: 18px;
+  font-size: 14px;
 }
 
 .headerlogo {
@@ -35,7 +35,7 @@ h2 {
   left: 12rem;
 }
 
-footer .container, header, .restaurant {
+header, .siteheader .ville, .restaurant {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -43,43 +43,43 @@ footer .container, header, .restaurant {
 }
 
 footer .container {
-  width: auto;
+  height: 250px;
+  width: 300px;
 }
 
-footer .container .piedlogo {
+footer .piedlogo {
   font-family: "Shrikhand", cursive;
   font-size: 14px;
   margin-left: 1rem;
   font-weight: 100;
 }
 
-footer .container .pied {
+footer .pied {
   background-color: #251f1f;
-  top: 5rem;
-  left: 0rem;
+  top: -12.3rem;
+  left: -4.5rem;
   font-family: "Shrikhand", cursive;
   position: relative;
-  height: 200px;
-  width: 320px;
+  height: 80%;
+  width: 100%;
   color: #fff;
 }
 
-footer .container .pied-proposer {
+footer .proposer {
   position: absolute;
   left: 2.5rem;
   top: 3rem;
-  color: #fff;
   font-family: "roboto", sans-serif;
   font-size: 14px;
 }
 
-footer .container .pied-proposer > i.fas {
+footer i.fas {
   position: absolute;
   top: 0rem;
   left: -1.5rem;
 }
 
-footer .container .pied-proposer-partenaire {
+footer .partenaire {
   position: absolute;
   top: 5rem;
   left: 2.5rem;
@@ -88,14 +88,14 @@ footer .container .pied-proposer-partenaire {
   font-size: 14px;
 }
 
-footer .container .pied-proposer-partenaire > i.fa {
+footer i.fa {
   position: absolute;
   top: 0rem;
   left: -1.5rem;
   transform: rotate(-45deg);
 }
 
-footer .container .pied-proposer-partenaire-legale {
+footer .legale {
   position: absolute;
   top: 7rem;
   left: 1rem;
@@ -104,7 +104,7 @@ footer .container .pied-proposer-partenaire-legale {
   font-size: 14px;
 }
 
-footer .container .pied-proposer-partenaire-legale-contact {
+footer .contact {
   position: absolute;
   top: 9rem;
   left: 1rem;
@@ -112,60 +112,37 @@ footer .container .pied-proposer-partenaire-legale-contact {
   font-size: 14px;
 }
 
-footer .container .pied-proposer-partenaire-legale-contact a {
+footer a {
   text-decoration: none;
   color: #fff;
 }
 
-header {
-  height: 250px;
-}
-
-.paris {
-  font-size: 13px;
-  position: absolute;
-  left: 7.5rem;
-}
-
 .siteheader {
   background-color: #ece6e64f;
-  height: 400px;
-  width: 300px;
+  height: auto;
+  width: 100%;
   text-align: center;
 }
 
-.siteheader-ville {
-  background-color: #bdb8b84f;
-  height: 40px;
-  width: 300px;
-  position: relative;
+.siteheader .ville {
+  background: #bdb8b84f;
   font-family: "roboto", sans-serif;
-  font-size: 13px;
+  width: auto;
 }
 
-.siteheader-ville > i.fas {
-  position: absolute;
-  left: 6rem;
-  top: 0.8rem;
-}
-
-.siteheader-ville-titre {
-  align-items: center;
-  font-family: "roboto", sans-serif;
-  font-size: 12px;
-  line-height: 1rem;
+.siteheader .ville p {
   margin-top: 1rem;
-  margin-left: 2rem;
+  position: relative;
 }
 
-.siteheader-ville-titre-titre2 {
-  font-family: "roboto", sans-serif;
-  font-size: 12px;
-  line-height: 1rem;
-  margin-left: 2rem;
+.siteheader i.fas {
+  position: absolute;
+  left: 9rem;
+  top: 4rem;
+  left: 8rem;
 }
 
-.siteheader-ville-titre-titre2 > button {
+.siteheader button {
   height: 40px;
   width: 200px;
   border: none;
@@ -173,7 +150,7 @@ header {
   background: linear-gradient(#ea6fa2b5, #9356DC);
 }
 
-.headerexplorer {
+.siteheader .headerexplorer {
   color: #fff;
 }
 
@@ -193,19 +170,20 @@ button:hover {
   text-align: center;
 }
 
-.choix .choix-restaurant {
+.choix-restaurant {
   box-shadow: 2px 2px 6px 0 rgba(0, 0, 0, 0.5);
   margin-bottom: 1rem;
   height: 48px;
   width: 250px;
   border: none;
-  border-radius: 15px;
+  border-radius: 20px;
   position: relative;
   padding-left: 2rem;
+  margin-left: 5rem;
 }
 
-.choix .choix-restaurant .numberCircle {
-  font: 32px "roboto", sans-serif, sans-serif;
+.choix-restaurant .numberCircle {
+  font: 16px "roboto", sans-serif;
   width: 2em;
   height: 2em;
   box-sizing: initial;
@@ -221,13 +199,23 @@ button:hover {
   top: 0.7em;
 }
 
-.choix .choix-restaurant:hover {
+.choix-restaurant:hover {
   box-shadow: 8px 8px 10px 0 rgba(0, 0, 0, 0.5);
   background-color: #e4d5f6;
 }
 
-.choixlabel {
-  margin-right: 10rem;
+.choix-restaurant h2 {
+  font-size: 13px;
+  position: absolute;
+  left: 5rem;
+  top: 0.3rem;
+}
+
+i.fas {
+  position: absolute;
+  left: 3rem;
+  top: 0.9rem;
+  color: #9356DC;
 }
 
 .restolabel {
@@ -240,50 +228,55 @@ button:hover {
   position: relative;
 }
 
-.restaurant .restaurant-box {
+.restaurant-box {
   background-color: #fff;
+  margin-top: 2rem;
+  margin-left: -1.5rem;
   height: 250px;
-  width: 320px;
-  border-radius: 15px;
+  width: 300px;
   box-shadow: 0 0 6px 3px #b1b1b14b;
   transition: box-shadow 0.2s;
-  padding: 3px;
   position: relative;
-  top: 3rem;
-  margin-bottom: 2rem;
-}
-
-.restaurant .restaurant-box .menu img {
-  object-fit: cover;
-  height: 70%;
-  width: 100%;
   border-radius: 15px;
 }
 
-.restaurant .restaurant-box i.far {
-  position: absolute;
-  left: 16rem;
-  bottom: 1rem;
-  color: black;
-}
-
-a:link {
-  text-decoration: none;
-}
-
-.text {
-  color: black;
-}
-
-.resto {
+.restaurant-box .resto {
   font-family: "roboto", sans-serif;
   margin-top: -0.5rem;
 }
 
-.button-nouveau {
+.restaurant-box img {
+  object-fit: cover;
+  height: 70%;
+  width: 100%;
+  position: absolute;
+  border-radius: 15px 15px 0 0;
+}
+
+.restaurant-box i.fa-heart {
+  position: absolute;
+  left: 16rem;
+  bottom: 1.5rem;
+  color: black;
+}
+
+.restaurant-box .text {
+  position: absolute;
+  top: 11rem;
+  left: 1rem;
+  color: black;
+}
+
+.restaurant-box .resto-name {
+  position: absolute;
+  top: 12.5rem;
+  left: 1rem;
+}
+
+.restaurant-box .nouveau {
   position: absolute;
   background-color: #99E2D0;
-  top: 1rem;
+  top: 2rem;
   right: 1rem;
   height: 40px;
   width: 100px;
@@ -293,6 +286,17 @@ a:link {
   font-size: 15px;
   color: #45675e;
   font-weight: bold;
+}
+
+.restaurant-box .nouveau h2 {
+  text-align: center;
+  margin-top: 0.6rem;
+}
+
+footer {
+  position: absolute;
+  top: 115rem;
+  left: 4rem;
 }
 
 .fa-heart {

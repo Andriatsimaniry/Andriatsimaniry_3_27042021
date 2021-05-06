@@ -4,12 +4,14 @@
     height: 48px;
     width: 250px;
     border: none;
-    border-radius: 15px;
+    border-radius: 20px;
     position: relative;
     padding-left: 2rem;
+    margin-left: 5rem;
+   
   
 .numberCircle{
-    font: 32px $texte, sans-serif;
+    font: 16px $texte;
         width: 2em;
         height: 2em;
         box-sizing: initial;
@@ -29,10 +31,10 @@
 }
 // ======== IMAGES DES RESTAURANTS ACCEUIL ============
 
-@mixin menu{
+@mixin resto{
     background-color: #fff;
     height:250px;
-    width:320px ;
+    width:300px ;
     border-radius: 15px;
     box-shadow: 0 0 6px 3px #b1b1b14b;
     transition: box-shadow 0.2s;
@@ -40,7 +42,7 @@
     position:relative;
     top: 3rem;
     margin-bottom: 2rem;
-    .menu img {
+    .resto img {
         object-fit: cover;
         height: 70%;
         width: 100%;
@@ -58,20 +60,20 @@ i.far{
 
     
 }
-@mixin plat {
+@mixin resto {
     background-color: #fff;
     margin-top: 2rem;
-    margin-left: -1.5rem;
-    height:100%;
-    width:100%;
+    margin-left: -4.5rem;
+    height:250px;
+    width:300px;
     box-shadow: 0 0 6px 3px #b1b1b14b;
     transition: box-shadow 0.2s;
     position:absolute;
     z-index: -1;
     >img{
         object-fit: cover;
-        height: auto;
-        width: auto;
+        height: 250px;
+        width: 100%;
     }
 }
 
@@ -80,70 +82,69 @@ i.far{
 @mixin entete{
     .header-logo{
         @extend %titre-logo;
-        .logo{
+    }
+    .logo{
             position: absolute;
-            left: 12rem;
-        }
-    &-retour{
+            left: 7rem;
+    }    
+    .retour{
         color: black;
         font-size: 18px;
         position:absolute;
         top: 2.3rem;
-        left: 9rem;
-    &-plat{
-        @include plat;
-        position: absolute;
-        left: 8rem;
+        left: 5rem;
+    }
+    .plat{
+        @include resto;
+        left: 7rem;
         top: 3rem;
     }
-    }
-    }
 }
-
 // ==========  MENUS DES TOUS LES  RESTAURANTS =======
 @mixin main-menu {
     .menu-box{
-        @extend %flex-center;
+       
         position: absolute;
-        top: 20rem;
-        left: 10rem;
+        top: 19rem;
+        left: 6rem;
         font-family: $texte;
         background-color: #fff;
         margin-top: -2rem;
         margin-left: -3.5rem;
-        height:1360px;
-        width:400px ;
+        height:1178px;
+        width:300px ;
         border-radius:40px 40px 0 0 ;
         box-shadow: 0 0 6px 3px #b1b1b14b;
         transition: box-shadow 0.2s;
         .menu-label{
             font-family: $titre;
-            font-size: 24px;
+            font-size: 18px;
             position: absolute;
             left: 2rem;
-            top: 1rem;
+            top: -1rem;
         }
         .menu-titre i.far{
             position: absolute;
-            left: 20rem;
-            top: 2.5rem;
+            left: 16rem;
+            top: 0.5rem;
         }
         .container-menu{
             background-color: rgba(255, 255, 255, 0.164);
             margin-top: 25px;
-            height:60px;
-            width:350px ;
+            height:45px;
+            width:80% ;
             border-radius: 15px;
             box-shadow: 0 0 6px 3px #b1b1b14b;
             transition: box-shadow 0.2s;
-            padding:0.8rem;
+            padding:1rem;
             position:relative;
             line-height: 0.5rem;
         }
         .prix{
             position: absolute;
-            left: 20rem;
+            left: 15rem;
             margin-top: -1.4rem;
+            font-size: 13px;
              
         }
         .commander-btn{
@@ -158,10 +159,10 @@ i.far{
 @mixin boutton-commander{
     position: absolute;
     border: none;
-    top: 80.8rem;
-    left: 5rem;
-    width: 235px;
-    height: 65px;
+    top: 67.8rem;
+    left: 3rem;
+    width: 185px;
+    height: 50px;
     border-radius:40px;
     font-size: 18px;
     font-family: $texte;

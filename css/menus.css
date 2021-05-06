@@ -13,19 +13,19 @@
 p {
   font-family: "roboto", sans-serif;
   font-weight: 300;
-  font-size: 15px;
+  font-size: 13px;
   color: black;
 }
 
 body, html {
   margin: 0;
-  padding-right: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
 h2 {
   font-family: "roboto", sans-serif;
-  font-size: 18px;
+  font-size: 14px;
 }
 
 header .header-logo {
@@ -35,51 +35,44 @@ header .header-logo {
   left: 12rem;
 }
 
-footer .container, main .menu-box {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
 footer .container {
-  width: auto;
+  height: 250px;
+  width: 300px;
 }
 
-footer .container .piedlogo {
+footer .piedlogo {
   font-family: "Shrikhand", cursive;
   font-size: 14px;
   margin-left: 1rem;
   font-weight: 100;
 }
 
-footer .container .pied {
+footer .pied {
   background-color: #251f1f;
-  top: 5rem;
-  left: 0rem;
+  top: -12.3rem;
+  left: -4.5rem;
   font-family: "Shrikhand", cursive;
   position: relative;
-  height: 200px;
-  width: 320px;
+  height: 80%;
+  width: 100%;
   color: #fff;
 }
 
-footer .container .pied-proposer {
+footer .proposer {
   position: absolute;
   left: 2.5rem;
   top: 3rem;
-  color: #fff;
   font-family: "roboto", sans-serif;
   font-size: 14px;
 }
 
-footer .container .pied-proposer > i.fas {
+footer i.fas {
   position: absolute;
   top: 0rem;
   left: -1.5rem;
 }
 
-footer .container .pied-proposer-partenaire {
+footer .partenaire {
   position: absolute;
   top: 5rem;
   left: 2.5rem;
@@ -88,14 +81,14 @@ footer .container .pied-proposer-partenaire {
   font-size: 14px;
 }
 
-footer .container .pied-proposer-partenaire > i.fa {
+footer i.fa {
   position: absolute;
   top: 0rem;
   left: -1.5rem;
   transform: rotate(-45deg);
 }
 
-footer .container .pied-proposer-partenaire-legale {
+footer .legale {
   position: absolute;
   top: 7rem;
   left: 1rem;
@@ -104,7 +97,7 @@ footer .container .pied-proposer-partenaire-legale {
   font-size: 14px;
 }
 
-footer .container .pied-proposer-partenaire-legale-contact {
+footer .contact {
   position: absolute;
   top: 9rem;
   left: 1rem;
@@ -112,55 +105,54 @@ footer .container .pied-proposer-partenaire-legale-contact {
   font-size: 14px;
 }
 
-footer .container .pied-proposer-partenaire-legale-contact a {
+footer a {
   text-decoration: none;
   color: #fff;
 }
 
-header .header-logo .logo {
+header .logo {
   position: absolute;
-  left: 12rem;
+  left: 7rem;
 }
 
-header .header-logo-retour {
+header .retour {
   color: black;
   font-size: 18px;
   position: absolute;
   top: 2.3rem;
-  left: 9rem;
+  left: 5rem;
 }
 
-header .header-logo-retour-plat {
+header .plat {
   background-color: #fff;
   margin-top: 2rem;
-  margin-left: -1.5rem;
-  height: 100%;
-  width: 100%;
+  margin-left: -4.5rem;
+  height: 250px;
+  width: 300px;
   box-shadow: 0 0 6px 3px #b1b1b14b;
   transition: box-shadow 0.2s;
   position: absolute;
   z-index: -1;
-  position: absolute;
-  left: 8rem;
+  left: 7rem;
   top: 3rem;
 }
 
-header .header-logo-retour-plat > img {
+header .plat > img {
   object-fit: cover;
-  height: auto;
-  width: auto;
+  height: 250px;
+  width: 100%;
 }
 
 main .menu-box {
   position: absolute;
-  top: 20rem;
-  left: 10rem;
+  top: 19rem;
+  left: 6rem;
   font-family: "roboto", sans-serif;
   background-color: #fff;
   margin-top: -2rem;
   margin-left: -3.5rem;
-  height: 1360px;
-  width: 400px;
+  height: 1178px;
+  width: 300px;
   border-radius: 40px 40px 0 0;
   box-shadow: 0 0 6px 3px #b1b1b14b;
   transition: box-shadow 0.2s;
@@ -168,44 +160,45 @@ main .menu-box {
 
 main .menu-box .menu-label {
   font-family: "Shrikhand", cursive;
-  font-size: 24px;
+  font-size: 18px;
   position: absolute;
   left: 2rem;
-  top: 1rem;
+  top: -1rem;
 }
 
 main .menu-box .menu-titre i.far {
   position: absolute;
-  left: 20rem;
-  top: 2.5rem;
+  left: 16rem;
+  top: 0.5rem;
 }
 
 main .menu-box .container-menu {
   background-color: rgba(255, 255, 255, 0.164);
   margin-top: 25px;
-  height: 60px;
-  width: 350px;
+  height: 45px;
+  width: 80%;
   border-radius: 15px;
   box-shadow: 0 0 6px 3px #b1b1b14b;
   transition: box-shadow 0.2s;
-  padding: 0.8rem;
+  padding: 1rem;
   position: relative;
   line-height: 0.5rem;
 }
 
 main .menu-box .prix {
   position: absolute;
-  left: 20rem;
+  left: 15rem;
   margin-top: -1.4rem;
+  font-size: 13px;
 }
 
 main .menu-box .commander-btn {
   position: absolute;
   border: none;
-  top: 80.8rem;
-  left: 5rem;
-  width: 235px;
-  height: 65px;
+  top: 67.8rem;
+  left: 3rem;
+  width: 185px;
+  height: 50px;
   border-radius: 40px;
   font-size: 18px;
   font-family: "roboto", sans-serif;
@@ -216,11 +209,11 @@ main .menu-box .commander-btn {
 footer {
   position: absolute;
   top: 101rem;
-  left: 4.5rem;
+  left: 7rem;
 }
 
 button:hover {
   box-shadow: 8px 8px 10px 0 rgba(0, 0, 0, 0.5);
   opacity: 0.7;
 }
-/*# sourceMappingURL=palette.css.map */
+/*# sourceMappingURL=menus.css.map */

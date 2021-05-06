@@ -3,20 +3,20 @@
 %paragraphe {
     font-family: $texte;
     font-weight: 300;
-    font-size: 15px;
+    font-size: 13px;
     color: black;
 }
  //  ======== BODY  HTML  ========
 
  %marge-principale{
-    margin: 0;
-    padding-right: 0;
+    margin:0;
+    padding:0;
     box-sizing: border-box;
 }
 //  ======= h2 =============
 %titre2{
     font-family: $texte;
-    font-size: 18px;
+    font-size: 14px;
 }
  //  =======LOGO ACCEUIL ========
 
@@ -40,8 +40,11 @@
 
 %pied-page {
     .container{
-        @extend %flex-center;   
-        width: auto;
+       
+        height: 250px;  
+        width: 300px;
+    
+    }
         .piedlogo{
             font-family: $titre;
             font-size: 14px;
@@ -52,67 +55,61 @@
     .pied{
         
         background-color:#251f1f;
-        top: 5rem;
-        left: 0rem;    
+        top: -12.3rem;
+        left: -4.5rem;    
         font-family: $titre;
         position: relative;
-        height: 200px;
-        width: 320px;
+        height: 80%;
+        width:100%;
         color: #fff;
-    
-        &-proposer{
-            position: absolute;
-            left: 2.5rem;
-            top: 3rem;
-            color: #fff;
+    }
+    .proposer{
+        position: absolute;
+        left: 2.5rem;
+        top: 3rem;
             font-family: $texte;
             font-size: 14px;
-        >i.fas{
+    }
+        i.fas{
                 position: absolute;
                 top: 0rem;
                 left: -1.5rem;
             }
-        &-partenaire{
+        .partenaire{
             position: absolute;
             top: 5rem;
             left: 2.5rem;
             color: #fff;
             font-family: $texte;
             font-size: 14px;
-        >i.fa{
+        }
+        i.fa{
                 position: absolute;
                 top: 0rem;
                 left: -1.5rem;
                 transform:rotate(-45deg)
             }
-        &-legale{
+        .legale{
             position: absolute;
             top: 7rem;
             left: 1rem;
             color: #fff;
             font-family: $texte;
             font-size: 14px;
-        &-contact {
+        }
+        .contact {
             position: absolute;
             top: 9rem;
             left: 1rem;
             
             font-family: $texte;
             font-size: 14px;
+        }
             a{
                 text-decoration: none;
                 color: #fff;
             }
-            
-        
         }
-        }
-        }
-    
-    }   
-    }
-    }
-}
 
 
 
