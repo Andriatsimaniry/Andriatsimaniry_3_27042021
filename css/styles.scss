@@ -1,4 +1,6 @@
 
+    
+
 @import './_variables';
 @import './_mixins';
 @import './_placeholders';
@@ -6,6 +8,7 @@
 
 body,html{
 @extend %marge-principale;
+
 }
 h2{
 @extend %titre2;
@@ -14,7 +17,7 @@ p {
 @extend %paragraphe;
 }
 header{
-height: 250px;
+
 @extend %flex-center;
     
 }
@@ -22,59 +25,48 @@ height: 250px;
 @extend %titre-logo;
 
 }
-.paris{
-    font-size: 13px;
-    position: absolute;
-    left: 7.5rem;
-}
-    
+ //  ===========  EN TÊTE DE LA PAGE D' ACCEUIL  =============
+
 .siteheader{
     background-color:$fond-clair;
-    height: 400px;
-    width: 300px;
+    height: auto;
+    width: 100%;
     text-align: center;
-    &-ville{
-        background-color:$fond-sombre;
-        height: 40px;
-        width: 300px;
-        position: relative;
-        font-family: $texte;
-        font-size: 13px;
-       
-        
-    >i.fas{
+    
+
+.ville{
+        background:$fond-sombre;       
+            font-family: $texte;
+            width: auto;
+            @extend %flex-center;
+    }
+.ville p{
+    margin-top: 1rem;
+    position: relative;
+
+}
+
+i.fas{
         position: absolute;
-        left: 6rem;
-        top: 0.8rem;
+        left: 9rem;
+        top: 4rem;
+        left: 8rem;
         
     }
-    &-titre{
-        
-        align-items: center;
-        font-family: $texte;
-        font-size: 12px;
-        line-height: 1rem;
-        margin-top: 1rem;
-        margin-left: 2rem;
-        
-    &-titre2{
-        font-family: $texte;
-        font-size: 12px;
-        line-height: 1rem;
-        margin-left: 2rem;
-    >button{
+
+    
+    button{
         height: 40px;
         width: 200px;
         border: none;
         border-radius:20px;
         background:$degrader;
     }
-}
-    }
-      }  
-    }
+ 
+
 .headerexplorer{
          color: #fff;
+}
 }
 button i{
     position: absolute;
@@ -88,8 +80,11 @@ button:hover{
     opacity: 0.7;
 }
 
+
+//  ======== CHOIX DES RESTAURANTS  ==============
 .choix{
 text-align: center;
+}
 .choix-restaurant{
 box-shadow: 2px 2px 6px 0 rgba(0,0,0,0.5);
  margin-bottom: 1rem;
@@ -99,10 +94,18 @@ box-shadow: 2px 2px 6px 0 rgba(0,0,0,0.5);
         box-shadow: 8px 8px 10px 0 rgba(0,0,0,0.5);
         background-color: $light;
       }
-  }
-.choixlabel{
-    margin-right:10rem;
-}
+      .choix-restaurant h2{
+          font-size: 13px;
+          position: absolute;
+          left: 5rem;
+          top: 0.3rem;
+      }
+      i.fas{
+          position: absolute;
+          left: 3rem;
+          top: 0.9rem;
+          color: $primaire;
+    }
 .restolabel{
     margin-right: 13rem;
     margin-bottom: -1rem;
@@ -112,27 +115,55 @@ box-shadow: 2px 2px 6px 0 rgba(0,0,0,0.5);
     background-color:$fond-clair;
     @extend %flex-center;
     position: relative;
+}
+
+//  ========== IMAGES DES RESTAURANTS A L'ACCEUIL  ===========
+
 .restaurant-box {
-        @include menu;
-    }                       
-}
-a:link{
-    text-decoration: none;
-}
-.text{
-    color: black;
-}
+    background-color: #fff;
+    margin-top: 2rem;
+    margin-left: -1.5rem;
+    height:250px;
+    width:300px;
+    box-shadow: 0 0 6px 3px #b1b1b14b;
+    transition: box-shadow 0.2s;
+    position:relative; 
+    border-radius: 15px;
 
-.resto{
-    font-family: $texte;
-    margin-top: -0.5rem;
-}
-
-
-.button-nouveau{
+    .resto{
+        font-family: $texte;
+        margin-top: -0.5rem;
+    }
+                       
+        img{
+        object-fit: cover;
+        height: 70%;
+        width: 100%;
+        position: absolute;    
+        border-radius: 15px 15px 0 0;
+    }
+    i.fa-heart{
+        position: absolute;
+        left: 16rem;
+        bottom: 1.5rem;
+        color: black;   
+        }
+        .text{
+            position: absolute;
+            top: 11rem;
+            left: 1rem;
+            color: black;
+        }
+        .resto-name{
+            position: absolute;
+            top: 12.5rem;
+            left: 1rem;
+        }
+    
+.nouveau{
     position: absolute;
     background-color: $tertiaire;
-    top: 1rem; 
+    top: 2rem; 
     right: 1rem;
     height: 40px;
     width: 100px;
@@ -142,10 +173,20 @@ a:link{
     font-size: 15px;
     color: #45675e;
     font-weight: bold;
-    
+  h2{
+     text-align: center;
+     margin-top:0.6rem;
+  }
+ }   
+  
+ // ====  PIED DE PAGES ==================
+
 }
 footer{
 @extend %pied-page;
+position: absolute;
+top: 115rem;
+left: 4rem;
 }
 
 //  ==== REMPLISSAGE DU  COEUR AU PASAGE DU SOURIS  ====
@@ -169,4 +210,4 @@ footer{
         color:$secondaire;
         cursor: pointer;
         }
-    
+        
