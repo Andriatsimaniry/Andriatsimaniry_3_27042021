@@ -4,36 +4,58 @@
 @import './_placeholders';
 body,html{
     @extend %marge-principale;
+    font-family: $texte;
+    display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center; 
+   margin-left: -0.5rem;
+   
 }
 p{
     @extend %paragraphe;
+    @extend %text-overflow;
 }
 h2{
     @extend %titre2;
+    @extend %text-overflow;
 }
-
+h1{
+   font-family: $titre;
+   font-size: 24px; 
+   font-weight: 300;
+   margin-left: 1rem;
+}
+h3{
+    font-family: $texte;
+font-weight: 100;
+font-size: 14px;
+}
  // =============== EN TÊTE DES PAGES MENUS  ===========
 header{
-    @include entete;
-
+    
+@include entete;
+width: auto;
+height:40%;
 }
 
  // ============== MAIN DES PAGES  MENUS ===============
 
-main{
-    @include main-menu;
-    
+ main{
+   @include main-menu;
+width: auto;
+height: 60%;
 
-}
-
+ 
+ }
 
 //  =============  PIED DES PAGES MENUS  ============
 
 footer{
     @extend %pied-page;
-    position: absolute;
-    top: 101rem;
-    left:7rem;
+    width: 100%;
+    height:auto;
+    margin-left: 0.5rem;
 }
 
 // ========== BOUTTON COMMANDER DES PAGES MENUS =========
@@ -41,4 +63,89 @@ footer{
 button:hover{
     box-shadow: 8px 8px 10px 0 rgba(0,0,0,0.5);
     opacity: 0.7;
+}
+.fa-heart{
+    position: relative;
+    border-radius: 50%;
+    font-size: 24px;
+}
+    .fa-heart::after {
+        color:transparent;
+        content: "\f004";
+        font-weight: bold;
+        transition: color 1s ease-out;
+        position: absolute;
+        font-size: 30px;
+        top: -0.1em;
+        right: -0.1em;
+    }
+        .fa-heart:hover::after{
+        color:$secondaire;
+        cursor: pointer;
+        }
+        @media screen and (min-width: 768px){
+            header{
+                font-size: 18px;
+                .plat {
+                    width: 700px;
+                    height: 300px;
+                    object-fit: cover;
+                }
+                .retour{
+                  margin-left: 1rem;  
+                  
+                }
+            }
+            main{
+            font-size: 18px;
+                
+            .menu-box{
+        width: 700px;  
+            }
+       
+           .commander-btn{
+               top: 70.8rem;
+               left: 13rem;
+           }
+           .menu-titre i.far{
+               left: 34rem;
+           }
+        }
+    }
+
+
+            
+            
+
+        
+
+@media screen and (min-width: 1200px){
+
+    header{
+        font-size: 18px;
+        .plat {
+            width: 1100px;
+            height: 320px;
+            object-fit: cover;
+        }
+        .retour{
+            position: absolute;
+            left: 8rem;
+        }
+    }
+    main{
+    font-size: 18px;
+        
+    .menu-box{
+width: 1100px;  
+    }
+
+   .commander-btn{
+       top: 70.8rem;
+       left: 28rem;
+   }
+   .menu-titre i.far{
+       left: 65rem;
+   }
+}
 }

@@ -16,7 +16,8 @@
 //  ======= h2 =============
 %titre2{
     font-family: $texte;
-    font-size: 14px;
+    font-size: 15px;
+    font-weight: 500;
 }
  //  =======LOGO ACCEUIL ========
 
@@ -36,72 +37,52 @@
     align-items: center;
 }
 
+%flex-row-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 //  ======== FOOTER DE TOUS LES PAGES ======
 
 %pied-page {
-    .container{
-       
-        height: 250px;  
-        width: 300px;
-    
+
+    .piedlogo{
+        font-family: $titre;
+        font-size: 14px;
+        margin-top: 0;
+        font-weight: 100;
     }
-        .piedlogo{
-            font-family: $titre;
-            font-size: 14px;
-            margin-left: 1rem;
-            font-weight: 100;
-        }
     
     .pied{
-        
-        background-color:#251f1f;
-        top: -12.3rem;
-        left: -4.5rem;    
-        font-family: $titre;
+        background-color:#251f1f; 
+        font-family: $texte;
         position: relative;
         height: 80%;
         width:100%;
         color: #fff;
+        padding: 0rem;
+        text-align: center;
     }
     .proposer{
-        position: absolute;
-        left: 2.5rem;
-        top: 3rem;
-            font-family: $texte;
-            font-size: 14px;
+        font-family: $texte;
+        font-size: 14px;
     }
-        i.fas{
-                position: absolute;
-                top: 0rem;
-                left: -1.5rem;
-            }
-        .partenaire{
-            position: absolute;
-            top: 5rem;
-            left: 2.5rem;
-            color: #fff;
-            font-family: $texte;
-            font-size: 14px;
-        }
+    .partenaire{
+        color: #fff;
+        font-family: $texte;
+        font-size: 14px;
+    }
         i.fa{
-                position: absolute;
-                top: 0rem;
-                left: -1.5rem;
                 transform:rotate(-45deg)
             }
         .legale{
-            position: absolute;
-            top: 7rem;
-            left: 1rem;
             color: #fff;
             font-family: $texte;
             font-size: 14px;
         }
         .contact {
-            position: absolute;
-            top: 9rem;
-            left: 1rem;
-            
+          
             font-family: $texte;
             font-size: 14px;
         }
@@ -111,7 +92,11 @@
             }
         }
 
-
+%text-overflow {
+            overflow:-moz-hidden-unscrollable;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+          }
 
 
 
