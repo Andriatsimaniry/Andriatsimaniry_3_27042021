@@ -93,11 +93,52 @@
         }
 
 %text-overflow {
-            overflow:-moz-hidden-unscrollable;
+            overflow:hidden-unscrollable;
             text-overflow: ellipsis;
             white-space: nowrap;
           }
 
+//  ==========   ANIMATION LOADER SPINNER  ============
+ %spin-loader{ 
 
-
-
+ position: absolute;
+ width: 100%;
+ height: 100%;
+ background: $primaire;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ z-index: 1002;
+    
+     .loader-logo {
+         color: $secondaire;
+         font-size: 80px;
+         margin-bottom: 150px;
+         animation: flash 1.2s infinite ease-in-out both;
+         animation-duration: 3s;
+     }
+     @keyframes flash {
+         0%{
+             visibility:visible;
+             color: $tertiaire;
+             text-shadow:0 0 7px $tertiaire;
+         }
+         90%{
+             color:$secondaire ;
+             text-shadow: none;
+             visibility: visible;
+         }
+         100%{
+             color: $tertiaire;
+             text-shadow: 0 0 7px $tertiaire;
+             visibility: hidden;
+         }
+         
+     }
+     .fondu-out{
+    
+         opacity: 0;
+         transition: opacity 0.4s ease-out;
+         
+     }
+    }

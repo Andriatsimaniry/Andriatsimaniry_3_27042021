@@ -49,7 +49,7 @@
     }
 
 i.far{
-        position: absolute;
+        
         left: 16rem;
         bottom: 1rem;
         color: black;
@@ -59,19 +59,20 @@ i.far{
 
     
 }
+//  ==========IMAGES DES MENUS =========
 @mixin resto1 {
     background-color: #fff;
-    height: 200px;;
-    width:294px;
+    height: 250px;;
+    width:100%;
     box-shadow: 0 0 6px 3px #b1b1b14b;
     transition: box-shadow 0.2s;
-    margin-left: 1rem;
+    margin-left: 0.1rem;
     z-index: -1;
 
     >img{
         object-fit: cover;
-        height: 250px;
-        width: 100%;
+        height:auto ;
+        width: 90%;
     }
 }
 
@@ -88,8 +89,7 @@ i.far{
     
     .plat{
         @include resto1;
-        left: 6.5rem;
-        top: 1rem;
+        object-fit: cover;
     }
        
     .retour{
@@ -103,89 +103,75 @@ i.far{
 // ==========  MENUS DES TOUS LES  RESTAURANTS =======
 @mixin main-menu {
     .menu-box{
-       
-        position: relative;
-        left: 0.5rem;
         font-family: $texte;
         background-color: #fff;
-        margin-top: -4rem;
+        margin:-4rem 1.2rem 0 0.1rem;
         padding-left: 0rem;
-        height:1200px;
-        width:300px ;
+        height:auto;
+        width:100%;
         border-radius:40px 40px 0 0 ;
         box-shadow: 0 0 6px 3px #b1b1b14b;
         transition: box-shadow 0.2s;
     }
-        .menu-label{
+        .menu-titre{
             font-family: $titre;
             font-size: 22px;
             padding-top: 1rem;
+            display: flex;
+            align-items: center;
+            margin-left: 0rem;
             }
-            .entrer-titre::after{
+            .menu-name{
+                margin: 1rem 1rem 0rem 0;
+                padding-right: 12rem;
+            }
+            .menu-name::after{
                 content: "";
                 border-bottom: 2px solid #99e2d0;
                 display: block;
-                padding-top: 3px;
                 width: 40px;
                     }        
         
-        .menu-titre i.far{
-            position: absolute;
-            left: 16rem;
-            top: 1.2rem;
-        }
-        .prix{                
+        .menu-titre i.fa-heart{
             
-            text-overflow: ellipsis;
-            white-space: nowrap;
-            transition: left 1s, transform 1s;
-            white-space: nowrap;
-            }
-            .prix:hover{
-            left: 100%;
-            transform: translateX(-100%);
-            }
-            .menu-label{
-                font-family: $titre;
-                font-size: 22px;
-                padding-top: 1rem;
-            }
-        .container-menu{
+            margin-left: 2rem;
+        
+        }
+        
+    
+    .container-menu{
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
     justify-content: space-between;
-    width:auto ;
+    width:85% ;
     height: 56px;
     line-height: 0.5;
-    box-shadow: 0 0 6px 3px #b1b1b14b;
-    
+    box-shadow: 0 0 6px 3px #b1b1b14b;    
     border-radius: 10px;
     padding: 0 1rem 0 0.5rem;
-    margin: 2.5rem 0.5rem 0 0.5rem;
+    margin: 1.5rem 0.5rem 0 0.5rem;
 
         }
-.spe{
-    @extend %text-overflow; 
-}    
-        .menu-entrer {
-            margin: 0.5rem 0 0 1rem;
-        }    
-        
-        .commander-btn{
-            @include boutton-commander;
-         }
-         
+.menu-label{
+ @extend %text-overflow;
+}  
+ .menu-bloc {
+@extend %flex-center;
+        }  
+.commander-btn{
+ @include boutton-commander;
+ }       
     
 
 }
 //  =======BOUTTON COMMANDER DE TOUS LES RESTAURANTS  ========
 
 @mixin boutton-commander{
-    position: absolute;
+
     border: none;
-    top: 70.8rem;
-    left: 3rem;
+    margin: 2rem 0 1rem 0;
+
     width: 185px;
     height: 50px;
     border-radius:40px;
@@ -196,11 +182,7 @@ i.far{
 
 }
 
-@mixin desktop-only {
-    @media only screen and (min-width: 1024px) {
-      @content;
-    }
-}
+
 // ========= REMPLISSAGE DU COEUR AU PASSAGE SURIS  ===========
 
 @mixin heart-animation{

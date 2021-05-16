@@ -5,12 +5,6 @@ p {
   color: black;
 }
 
-body, html {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 h2 {
   font-family: "roboto", sans-serif;
   font-size: 15px;
@@ -84,6 +78,72 @@ footer .contact {
 footer a {
   text-decoration: none;
   color: #fff;
+}
+
+.loader {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #9356DC;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1002;
+}
+
+.loader .loader-logo {
+  color: #ff79da;
+  font-size: 80px;
+  margin-bottom: 150px;
+  animation: flash 1.2s infinite ease-in-out both;
+  animation-duration: 3s;
+}
+
+@keyframes flash {
+  0% {
+    visibility: visible;
+    color: #99E2D0;
+    text-shadow: 0 0 7px #99E2D0;
+  }
+  90% {
+    color: #ff79da;
+    text-shadow: none;
+    visibility: visible;
+  }
+  100% {
+    color: #99E2D0;
+    text-shadow: 0 0 7px #99E2D0;
+    visibility: hidden;
+  }
+}
+
+.loader .fondu-out {
+  opacity: 0;
+  transition: opacity 0.4s ease-out;
+}
+
+body, html {
+  height: 100%;
+  font-family: "roboto", sans-serif;
+  padding-right: 0rem;
+  margin-left: 0rem;
+}
+
+.acceuil {
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.loader .loader-logo {
+  font-family: "Shrikhand", cursive;
+  font-size: 24px;
+}
+
+a {
+  text-decoration: none;
 }
 
 .siteheader {
@@ -195,12 +255,17 @@ button:hover {
   padding: 2rem;
 }
 
+.fonction {
+  margin-left: 1rem;
+}
+
 .restaurant-box {
+  display: flex;
+  justify-content: center;
   background-color: #fff;
-  margin-top: 2rem;
-  margin-left: 0rem;
+  margin: 2rem 0rem 0 0;
   height: 250px;
-  width: 300px;
+  width: 100%;
   box-shadow: 0 0 6px 3px #b1b1b14b;
   transition: box-shadow 0.2s;
   position: relative;
@@ -216,14 +281,11 @@ button:hover {
   object-fit: cover;
   height: 70%;
   width: 100%;
-  position: absolute;
   border-radius: 15px 15px 0 0;
 }
 
 .restaurant-box i.fa-heart {
-  position: absolute;
-  left: 16rem;
-  bottom: 1.5rem;
+  margin: 1rem -2rem 0 0;
   color: black;
 }
 
@@ -249,17 +311,17 @@ button:hover {
   cursor: pointer;
 }
 
-.restaurant-box .text {
-  position: absolute;
-  top: 11rem;
-  left: 1rem;
-  color: black;
+.restaurant-box .resto-name {
+  display: flex;
+  justify-content: space-around;
+  line-height: 0.5rem;
+  margin-left: -2.5rem;
 }
 
-.restaurant-box .resto-name {
-  position: absolute;
-  top: 12.5rem;
-  left: 1rem;
+.restaurant-box .text {
+  font-family: "roboto", sans-serif;
+  font-weight: bold;
+  color: black;
 }
 
 .restaurant-box .nouveau {
@@ -300,7 +362,7 @@ button:hover {
 }
 
 .fa-heart:hover::after {
-  color: #ff79da;
+  color: #9356DC;
   cursor: pointer;
 }
 
@@ -318,9 +380,7 @@ button:hover {
     margin-right: 5rem;
   }
   main .fonction {
-    position: absolute;
-    top: 15rem;
-    left: 20rem;
+    margin-left: 20.5rem;
   }
   main .restaurant {
     display: flex;
@@ -353,15 +413,13 @@ button:hover {
     margin-left: 0rem;
   }
   main .choix-restaurant {
-    margin-left: 3rem;
+    margin-left: 1rem;
     width: 180px;
     margin-top: 2rem;
     margin-right: 5rem;
   }
   main .fonction {
-    position: absolute;
-    top: 15rem;
-    left: 28rem;
+    margin-left: 27rem;
   }
   main .restaurant {
     display: flex;
@@ -390,6 +448,7 @@ button:hover {
     padding-left: 15rem;
   }
   .choix-restaurant {
+    margin-right: 5rem;
     width: 250px;
   }
   .restaurant {
@@ -401,8 +460,7 @@ button:hover {
     margin-left: 5rem;
   }
   .fonction {
-    position: absolute;
-    left: 32rem;
+    margin-left: 1rem;
   }
 }
 /*# sourceMappingURL=styles.css.map */

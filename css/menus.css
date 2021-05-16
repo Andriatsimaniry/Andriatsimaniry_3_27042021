@@ -24,6 +24,13 @@ header .header-logo {
   left: 12rem;
 }
 
+main .menu-bloc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 footer .piedlogo {
   font-family: "Shrikhand", cursive;
   font-size: 14px;
@@ -73,10 +80,28 @@ footer a {
   color: #fff;
 }
 
-p, h2, main .spe {
-  overflow: -moz-hidden-unscrollable;
+p, h2, main .menu-label {
+  overflow: hidden-unscrollable;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+
+@keyframes flash {
+  0% {
+    visibility: visible;
+    color: #99E2D0;
+    text-shadow: 0 0 7px #99E2D0;
+  }
+  90% {
+    color: #ff79da;
+    text-shadow: none;
+    visibility: visible;
+  }
+  100% {
+    color: #99E2D0;
+    text-shadow: 0 0 7px #99E2D0;
+    visibility: hidden;
+  }
 }
 
 body, html {
@@ -85,7 +110,8 @@ body, html {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-left: -0.5rem;
+  margin: 0;
+  padding: 0;
 }
 
 h1 {
@@ -115,20 +141,19 @@ header .header-logo {
 
 header .plat {
   background-color: #fff;
-  height: 200px;
-  width: 294px;
+  height: 250px;
+  width: 100%;
   box-shadow: 0 0 6px 3px #b1b1b14b;
   transition: box-shadow 0.2s;
-  margin-left: 1rem;
+  margin-left: 0.1rem;
   z-index: -1;
-  left: 6.5rem;
-  top: 1rem;
+  object-fit: cover;
 }
 
 header .plat > img {
   object-fit: cover;
-  height: 250px;
-  width: 100%;
+  height: auto;
+  width: 90%;
 }
 
 header .retour {
@@ -137,60 +162,45 @@ header .retour {
 }
 
 main {
-  width: auto;
+  width: 100%;
   height: 60%;
 }
 
 main .menu-box {
-  position: relative;
-  left: 0.5rem;
   font-family: "roboto", sans-serif;
   background-color: #fff;
-  margin-top: -4rem;
+  margin: -4rem 1.2rem 0 0.1rem;
   padding-left: 0rem;
-  height: 1200px;
-  width: 300px;
+  height: auto;
+  width: 100%;
   border-radius: 40px 40px 0 0;
   box-shadow: 0 0 6px 3px #b1b1b14b;
   transition: box-shadow 0.2s;
 }
 
-main .menu-label {
+main .menu-titre {
   font-family: "Shrikhand", cursive;
   font-size: 22px;
   padding-top: 1rem;
+  display: flex;
+  align-items: center;
+  margin-left: 0rem;
 }
 
-main .entrer-titre::after {
+main .menu-name {
+  margin: 1rem 1rem 0rem 0;
+  padding-right: 12rem;
+}
+
+main .menu-name::after {
   content: "";
   border-bottom: 2px solid #99e2d0;
   display: block;
-  padding-top: 3px;
   width: 40px;
 }
 
-main .menu-titre i.far {
-  position: absolute;
-  left: 16rem;
-  top: 1.2rem;
-}
-
-main .prix {
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  transition: left 1s, transform 1s;
-  white-space: nowrap;
-}
-
-main .prix:hover {
-  left: 100%;
-  transform: translateX(-100%);
-}
-
-main .menu-label {
-  font-family: "Shrikhand", cursive;
-  font-size: 22px;
-  padding-top: 1rem;
+main .menu-titre i.fa-heart {
+  margin-left: 2rem;
 }
 
 main .container-menu {
@@ -198,24 +208,18 @@ main .container-menu {
   flex-flow: row nowrap;
   align-items: center;
   justify-content: space-between;
-  width: auto;
+  width: 85%;
   height: 56px;
   line-height: 0.5;
   box-shadow: 0 0 6px 3px #b1b1b14b;
   border-radius: 10px;
   padding: 0 1rem 0 0.5rem;
-  margin: 2.5rem 0.5rem 0 0.5rem;
-}
-
-main .menu-entrer {
-  margin: 0.5rem 0 0 1rem;
+  margin: 1.5rem 0.5rem 0 0.5rem;
 }
 
 main .commander-btn {
-  position: absolute;
   border: none;
-  top: 70.8rem;
-  left: 3rem;
+  margin: 2rem 0 1rem 0;
   width: 185px;
   height: 50px;
   border-radius: 40px;
@@ -237,9 +241,9 @@ button:hover {
 }
 
 .fa-heart {
-  position: relative;
   border-radius: 50%;
   font-size: 24px;
+  margin-left: 6rem;
 }
 
 .fa-heart::after {
@@ -247,10 +251,8 @@ button:hover {
   content: "\f004";
   font-weight: bold;
   transition: color 1s ease-out;
-  position: absolute;
   font-size: 30px;
-  top: -0.1em;
-  right: -0.1em;
+  margin-left: -1.7rem;
 }
 
 .fa-heart:hover::after {
@@ -263,7 +265,7 @@ button:hover {
     font-size: 18px;
   }
   header .plat {
-    width: 700px;
+    width: 100%;
     height: 300px;
     object-fit: cover;
   }
@@ -272,44 +274,148 @@ button:hover {
   }
   main {
     font-size: 18px;
+    width: 100%;
   }
   main .menu-box {
-    width: 700px;
+    width: 100%;
   }
   main .commander-btn {
     top: 70.8rem;
     left: 13rem;
   }
   main .menu-titre i.far {
-    left: 34rem;
+    margin-left: 30rem;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  header {
+  h1 {
+    font-size: 32px;
+  }
+  h2 {
+    font-size: 22px;
+  }
+  p {
     font-size: 18px;
   }
+  header {
+    font-size: 22px;
+  }
   header .plat {
-    width: 1100px;
+    width: 100%;
     height: 320px;
     object-fit: cover;
   }
-  header .retour {
-    position: absolute;
-    left: 8rem;
-  }
   main {
     font-size: 18px;
+    width: 100%;
   }
   main .menu-box {
-    width: 1100px;
+    width: 100%px;
   }
   main .commander-btn {
     top: 70.8rem;
     left: 28rem;
   }
   main .menu-titre i.far {
-    left: 65rem;
+    margin-left: 60rem;
+  }
+  main .fa-heart::after {
+    margin-left: -1.7rem;
+  }
+}
+
+.checkbox {
+  height: 100%;
+  width: 20%;
+  border: none;
+  background-color: #99e2d0;
+  margin-right: -1rem;
+  border-radius: 0px 10px 10px 0;
+  display: none;
+}
+
+.container-menu {
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.container-menu .checkbox {
+  transition: 0.5s;
+}
+
+.container-menu:hover .checkbox {
+  display: block;
+  animation: slidebox  ease-in-out .8s;
+}
+
+.btn-circle {
+  color: #fff;
+  font-size: 26px;
+  margin: 1rem 1rem 1rem 1rem;
+  transform: rotate(360deg);
+}
+
+.container-menu:hover .btn-circle {
+  animation: spin ease-in-out  .8s;
+}
+
+@keyframes slidebox {
+  0% {
+    transform: translate(50px, 0);
+  }
+  50% {
+    transform: translate(25px, 0);
+  }
+  100% {
+    transform: translate(1px, 0);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotade(90deg);
+  }
+  50% {
+    transform: rotade(180deg);
+  }
+  75% {
+    transform: rotate(270deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.menu-bloc {
+  overflow: hidden;
+  animation-duration: 3s;
+  animation-name: fadein;
+}
+
+@keyframes fadein {
+  0% {
+    margin-top: 100%;
+    width: 0%;
+    opacity: 0;
+  }
+  50% {
+    margin-top: 50%;
+    width: 50%;
+    opacity: 1;
+  }
+  75% {
+    margin-top: 25%;
+    width: 75%;
+    opacity: 1;
+  }
+  100% {
+    margin-top: 0%;
+    width: 100%;
+    opacity: 1;
   }
 }
 /*# sourceMappingURL=menus.css.map */
