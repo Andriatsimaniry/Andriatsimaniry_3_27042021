@@ -181,6 +181,54 @@ i.far{
     background:$degrader;
 
 }
+//  ======== FOOTER DE TOUS LES PAGES ======
+
+@mixin pied-page {
+
+    .piedlogo{
+        font-family: $titre;
+        font-size: 14px;
+        margin-top: 0;
+        font-weight: 100;
+    }
+    
+    .pied{
+        background-color:#251f1f; 
+        font-family: $texte;
+        position: relative;
+        height: 80%;
+        width:100%;
+        color: #fff;
+        padding: 0rem;
+        text-align: center;
+    }
+    .proposer{
+        font-family: $texte;
+        font-size: 14px;
+    }
+    .partenaire{
+        color: #fff;
+        font-family: $texte;
+        font-size: 14px;
+    }
+        i.fa{
+                transform:rotate(-45deg)
+            }
+        .legale{
+            color: #fff;
+            font-family: $texte;
+            font-size: 14px;
+        }
+        .contact {
+          
+            font-family: $texte;
+            font-size: 14px;
+        }
+            a{
+                text-decoration: none;
+                color: #fff;
+            }
+        }
 
 
 // ========= REMPLISSAGE DU COEUR AU PASSAGE SURIS  ===========

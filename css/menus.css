@@ -31,76 +31,69 @@ main .menu-bloc {
   align-items: center;
 }
 
-footer .piedlogo {
-  font-family: "Shrikhand", cursive;
-  font-size: 14px;
-  margin-top: 0;
-  font-weight: 100;
-}
-
-footer .pied {
-  background-color: #251f1f;
-  font-family: "roboto", sans-serif;
-  position: relative;
-  height: 80%;
-  width: 100%;
-  color: #fff;
-  padding: 0rem;
-  text-align: center;
-}
-
-footer .proposer {
-  font-family: "roboto", sans-serif;
-  font-size: 14px;
-}
-
-footer .partenaire {
-  color: #fff;
-  font-family: "roboto", sans-serif;
-  font-size: 14px;
-}
-
-footer i.fa {
-  transform: rotate(-45deg);
-}
-
-footer .legale {
-  color: #fff;
-  font-family: "roboto", sans-serif;
-  font-size: 14px;
-}
-
-footer .contact {
-  font-family: "roboto", sans-serif;
-  font-size: 14px;
-}
-
-footer a {
-  text-decoration: none;
-  color: #fff;
-}
-
 p, h2, main .menu-label {
-  overflow: hidden-unscrollable;
+  overflow: -moz-hidden-unscrollable;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+
+@keyframes loaderanimation {
+  0% {
+    visibility: visible;
+    opacity: 1;
+  }
+  95% {
+    visibility: visible;
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
 }
 
 @keyframes flash {
   0% {
     visibility: visible;
-    color: #99E2D0;
-    text-shadow: 0 0 7px #99E2D0;
+    opacity: 1;
+    color: #9356DC;
+    text-shadow: 0 0 7px #9356DC;
   }
   90% {
     color: #ff79da;
     text-shadow: none;
     visibility: visible;
+    opacity: 0;
   }
   100% {
-    color: #99E2D0;
-    text-shadow: 0 0 7px #99E2D0;
+    color: #8c2d96b5;
+    text-shadow: 0 0 7px #8c2d96b5;
+    opacity: 0;
     visibility: hidden;
+  }
+}
+
+.container-menu {
+  animation: fadein 5s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  50% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  75% {
+    opacity: 1;
+    transform: translateY(25px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
   }
 }
 
@@ -235,6 +228,55 @@ footer {
   margin-left: 0.5rem;
 }
 
+footer .piedlogo {
+  font-family: "Shrikhand", cursive;
+  font-size: 14px;
+  margin-top: 0;
+  font-weight: 100;
+}
+
+footer .pied {
+  background-color: #251f1f;
+  font-family: "roboto", sans-serif;
+  position: relative;
+  height: 80%;
+  width: 100%;
+  color: #fff;
+  padding: 0rem;
+  text-align: center;
+}
+
+footer .proposer {
+  font-family: "roboto", sans-serif;
+  font-size: 14px;
+}
+
+footer .partenaire {
+  color: #fff;
+  font-family: "roboto", sans-serif;
+  font-size: 14px;
+}
+
+footer i.fa {
+  transform: rotate(-45deg);
+}
+
+footer .legale {
+  color: #fff;
+  font-family: "roboto", sans-serif;
+  font-size: 14px;
+}
+
+footer .contact {
+  font-family: "roboto", sans-serif;
+  font-size: 14px;
+}
+
+footer a {
+  text-decoration: none;
+  color: #fff;
+}
+
 button:hover {
   box-shadow: 8px 8px 10px 0 rgba(0, 0, 0, 0.5);
   opacity: 0.7;
@@ -346,7 +388,7 @@ button:hover {
 
 .container-menu:hover .checkbox {
   display: block;
-  animation: slidebox  ease-in-out .8s;
+  animation: slidebox 1s linear;
 }
 
 .btn-circle {
@@ -387,35 +429,6 @@ button:hover {
   }
   100% {
     transform: rotate(360deg);
-  }
-}
-
-.menu-bloc {
-  overflow: hidden;
-  animation-duration: 3s;
-  animation-name: fadein;
-}
-
-@keyframes fadein {
-  0% {
-    margin-top: 100%;
-    width: 0%;
-    opacity: 0;
-  }
-  50% {
-    margin-top: 50%;
-    width: 50%;
-    opacity: 1;
-  }
-  75% {
-    margin-top: 25%;
-    width: 75%;
-    opacity: 1;
-  }
-  100% {
-    margin-top: 0%;
-    width: 100%;
-    opacity: 1;
   }
 }
 /*# sourceMappingURL=menus.css.map */

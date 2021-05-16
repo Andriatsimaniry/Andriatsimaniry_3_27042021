@@ -2,31 +2,27 @@
 @import './_variables';
 @import './_mixins';
 @import './_placeholders';
-
+@import'./animation';
 
 body,html{
-height: 100%;
-font-family: $texte;
-padding-right: 0rem;
-margin-left: 0rem;
+@extend %marge-principale;
+height: 100vh;
+
 }
 .acceuil{
-height: 100%;
-width: 100%;
-background-repeat: no-repeat;
-background-size: cover;
-background-position: center;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
 
 }
 .loader{
-@extend %spin-loader;
-.loader-logo{
-font-family: $titre;
-font-size: 24px;
+    @extend %flash-loader;
 }
-
+.loader-logo h1{
+    font-family: $titre;
+    font-size: 30px;
 }
-
 
 a{
     text-decoration: none;
@@ -208,9 +204,9 @@ button:hover{
 // ====  PIED DE PAGES ==================
 
 footer{
-    @extend %pied-page;
+    @include pied-page;
 }
- 
+    
 
 //  ==== REMPLISSAGE DU  COEUR AU PASAGE DU SOURIS  ====
 

@@ -2,6 +2,7 @@
 @import './_variables';
 @import './_mixins';
 @import './_placeholders';
+@import './_animation';
 body,html{
     @extend %marge-principale;
     font-family: $texte;
@@ -53,7 +54,7 @@ height: 60%;
 //  =============  PIED DES PAGES MENUS  ============
 
 footer{
-    @extend %pied-page;
+    @include pied-page;
     width: 100%;
     height:auto;
     margin-left: 0.5rem;
@@ -189,7 +190,7 @@ button:hover{
     
 .container-menu:hover .checkbox{
 display: block;
-animation: slidebox  ease-in-out .8s;
+animation: slidebox 1s linear;
 }
 .btn-circle {
     color: #fff;
@@ -246,33 +247,6 @@ animation: slidebox  ease-in-out .8s;
           }
         }
         //  ================= ANIMATION MENU  =============
-       
-        .menu-bloc
-        {
-            overflow:hidden;
-            animation-duration: 3s;
-            animation-name: fadein;
-          }
-          
-          @keyframes fadein {
-            0% {
-              margin-top: 100%;
-              width: 0%;
-              opacity: 0;
-            }
-            50%{
-                margin-top: 50%;
-                width: 50%;
-                opacity: 1;
-            }
-            75%{
-                margin-top: 25%;
-                width: 75%;
-                opacity: 1;
-            }
-            100% {
-              margin-top: 0%;
-              width: 100%;
-              opacity: 1;
-            }
-          }
+       .container-menu{
+        @extend %animation-menu;
+      }
