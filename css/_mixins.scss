@@ -44,7 +44,7 @@
     .resto img {
         object-fit: cover;
         height: 70%;
-        width: 100%;
+        width: 100vw;
         border-radius: 15px;
     }
 
@@ -63,7 +63,7 @@ i.far{
 @mixin resto1 {
     background-color: #fff;
     height: 250px;;
-    width:100%;
+    width:100vw;
     box-shadow: 0 0 6px 3px #b1b1b14b;
     transition: box-shadow 0.2s;
     margin-left: 0.1rem;
@@ -105,10 +105,10 @@ i.far{
     .menu-box{
         font-family: $texte;
         background-color: #fff;
-        margin:-4rem 1.2rem 0 0.1rem;
+        margin:-4rem 0rem 0 0.1rem;
         padding-left: 0rem;
         height:auto;
-        width:100%;
+        width:100vw;
         border-radius:40px 40px 0 0 ;
         box-shadow: 0 0 6px 3px #b1b1b14b;
         transition: box-shadow 0.2s;
@@ -124,17 +124,19 @@ i.far{
             .menu-name{
                 margin: 1rem 1rem 0rem 0;
                 padding-right: 12rem;
+               
             }
             .menu-name::after{
                 content: "";
                 border-bottom: 2px solid #99e2d0;
                 display: block;
                 width: 40px;
-                    }        
+                    } 
+            
         
         .menu-titre i.fa-heart{
             
-            margin-left: 2rem;
+            margin-left: 3rem;
         
         }
         
@@ -153,9 +155,14 @@ i.far{
     margin: 1.5rem 0.5rem 0 0.5rem;
 
         }
-.menu-label{
- @extend %text-overflow;
+        .menu-label{
+            white-space: nowrap;
+            overflow: hidden;
+        }
+p,h2{
+   text-overflow: ellipsis;   
 }  
+
  .menu-bloc {
 @extend %flex-center;
         }  

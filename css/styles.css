@@ -5,12 +5,6 @@ p {
   color: black;
 }
 
-body, html {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 h2 {
   font-family: "roboto", sans-serif;
   font-size: 15px;
@@ -69,7 +63,8 @@ header, .restaurant {
 
 .loader .loader-logo {
   color: #ff79da;
-  font-size: 50px;
+  font-size: 30px;
+  font-family: "Shrikhand", cursive;
   margin-bottom: 150px;
   animation: flash 1.2s 5 ease-in-out both;
 }
@@ -122,12 +117,14 @@ header, .restaurant {
 }
 
 body, html {
+  width: 100vw;
   height: 100vh;
+  margin-left: 0rem;
 }
 
 .acceuil {
-  height: 100%;
-  width: 100%;
+  height: 100vh;
+  width: 100vw;
   background-size: cover;
   background-position: center;
 }
@@ -144,7 +141,7 @@ a {
 .siteheader {
   background-color: #ece6e64f;
   height: auto;
-  width: 100%;
+  width: 100vw;
   text-align: center;
   padding-bottom: 1rem;
 }
@@ -250,7 +247,7 @@ button:hover {
   padding: 2rem;
 }
 
-.fonction {
+.fonction h2 {
   margin-left: 1rem;
 }
 
@@ -439,7 +436,7 @@ footer a {
     top: 0rem;
   }
   main .restaurant-box {
-    width: 618px;
+    width: auto;
     margin: 1rem 0rem 0rem 2rem;
   }
   main .restaurant-box i.fa-heart {
@@ -454,7 +451,7 @@ footer a {
   }
   main .choix {
     display: inline-flex;
-    margin-left: 0rem;
+    margin-left: 2rem;
   }
   main .choix-restaurant {
     margin-left: 1rem;
@@ -480,31 +477,35 @@ footer a {
   main .restaurant-box {
     margin: 1rem 3rem 0rem 2rem;
   }
+  main .restaurant-box i.fa-heart {
+    left: 50rem;
+  }
+  main .text {
+    margin-right: 30rem;
+  }
 }
 
 @media screen and (min-width: 1200px) {
-  body {
-    font-size: 18px;
+  body, html {
+    font-size: 24px;
+    height: 100vh;
   }
   .choix {
-    display: flex;
-    flex-direction: row;
-    padding-left: 15rem;
+    padding-left: 6rem;
   }
   .choix-restaurant {
     margin-right: 5rem;
     width: 250px;
   }
   .restaurant {
-    padding-left: -10rem;
     background-color: #ece6e64f;
     margin-left: 0rem;
   }
   .restaurant-box {
-    margin-left: 5rem;
+    margin-left: 0rem;
   }
-  .fonction {
-    margin-left: 1rem;
+  .fonction h2 {
+    margin-left: 0rem;
   }
 }
 /*# sourceMappingURL=styles.css.map */

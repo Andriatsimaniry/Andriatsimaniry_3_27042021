@@ -5,12 +5,6 @@ p {
   color: black;
 }
 
-body, html {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 h2 {
   font-family: "roboto", sans-serif;
   font-size: 15px;
@@ -31,8 +25,7 @@ main .menu-bloc {
   align-items: center;
 }
 
-p, h2, main .menu-label {
-  overflow: -moz-hidden-unscrollable;
+p, h2 {
   text-overflow: ellipsis;
   white-space: nowrap;
 }
@@ -98,12 +91,13 @@ p, h2, main .menu-label {
 }
 
 body, html {
+  width: 100%;
   font-family: "roboto", sans-serif;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 0;
+  margin-left: 0;
   padding: 0;
 }
 
@@ -135,7 +129,7 @@ header .header-logo {
 header .plat {
   background-color: #fff;
   height: 250px;
-  width: 100%;
+  width: 100vw;
   box-shadow: 0 0 6px 3px #b1b1b14b;
   transition: box-shadow 0.2s;
   margin-left: 0.1rem;
@@ -162,10 +156,10 @@ main {
 main .menu-box {
   font-family: "roboto", sans-serif;
   background-color: #fff;
-  margin: -4rem 1.2rem 0 0.1rem;
+  margin: -4rem 0rem 0 0.1rem;
   padding-left: 0rem;
   height: auto;
-  width: 100%;
+  width: 100vw;
   border-radius: 40px 40px 0 0;
   box-shadow: 0 0 6px 3px #b1b1b14b;
   transition: box-shadow 0.2s;
@@ -193,7 +187,7 @@ main .menu-name::after {
 }
 
 main .menu-titre i.fa-heart {
-  margin-left: 2rem;
+  margin-left: 3rem;
 }
 
 main .container-menu {
@@ -208,6 +202,15 @@ main .container-menu {
   border-radius: 10px;
   padding: 0 1rem 0 0.5rem;
   margin: 1.5rem 0.5rem 0 0.5rem;
+}
+
+main .menu-label {
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+main p, main h2 {
+  text-overflow: ellipsis;
 }
 
 main .commander-btn {
@@ -298,7 +301,7 @@ button:hover {
 }
 
 .fa-heart:hover::after {
-  color: #ff79da;
+  color: #9356DC;
   cursor: pointer;
 }
 
@@ -307,7 +310,7 @@ button:hover {
     font-size: 18px;
   }
   header .plat {
-    width: 100%;
+    width: 100vw;
     height: 300px;
     object-fit: cover;
   }
@@ -344,7 +347,7 @@ button:hover {
     font-size: 22px;
   }
   header .plat {
-    width: 100%;
+    width: 100vw;
     height: 320px;
     object-fit: cover;
   }
@@ -353,7 +356,7 @@ button:hover {
     width: 100%;
   }
   main .menu-box {
-    width: 100%px;
+    width: 100%;
   }
   main .commander-btn {
     top: 70.8rem;
@@ -419,10 +422,10 @@ button:hover {
     transform: rotate(0deg);
   }
   25% {
-    transform: rotade(90deg);
+    transform: rotate(90deg);
   }
   50% {
-    transform: rotade(180deg);
+    transform: rotate(180deg);
   }
   75% {
     transform: rotate(270deg);

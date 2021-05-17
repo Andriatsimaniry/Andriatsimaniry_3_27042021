@@ -5,13 +5,14 @@
 @import'./animation';
 
 body,html{
-@extend %marge-principale;
+width: 100vw;
 height: 100vh;
+margin-left: 0rem;
 
 }
 .acceuil{
-    height: 100%;
-    width: 100%;
+    height: 100vh;
+    width: 100vw;
     background-size: cover;
     background-position: center;
 
@@ -50,7 +51,7 @@ header{
 .siteheader{
     background-color:$fond-clair;
     height: auto;
-    width: 100%;
+    width: 100vw;
     text-align: center;
     padding-bottom: 1rem;
 
@@ -130,7 +131,7 @@ button:hover{
     position: relative;
     padding: 2rem;
 }
-.fonction{
+.fonction h2{
     margin-left: 1rem;
 }
 
@@ -264,7 +265,7 @@ footer{
                 }
                 
                 .restaurant-box {
-                    width: 618px;
+                width: auto;
                 margin:1rem 0rem 0rem 2rem;
 
                 }
@@ -283,7 +284,7 @@ footer{
                 .choix{
                     
                    display: inline-flex;                 
-                   margin-left: 0rem;
+                   margin-left: 2rem;
                   
                 }
                 .choix-restaurant{
@@ -313,19 +314,23 @@ footer{
                 margin:1rem 3rem 0rem 2rem;
 
                 }
+                .restaurant-box i.fa-heart{
+                    left: 50rem;
+                }
+                .text{
+                    margin-right: 30rem;
+                }
             }
         }
 
        
             @media screen and (min-width: 1200px){
-                body{
-                    font-size: 18px;
-                    
+                body,html {
+                    font-size: 24px;
+                    height: 100vh;
                 }
                 .choix{
-                    display: flex;
-                    flex-direction: row;
-                    padding-left: 15rem;
+                    padding-left: 6rem;
                     
                 }
                .choix-restaurant{
@@ -333,15 +338,15 @@ footer{
                    width: 250px;
                } 
                .restaurant{
-                   padding-left:-10rem;
+                   
                    background-color: $fond-clair;
                    margin-left: 0rem;
                }
                .restaurant-box{
-                   margin-left: 5rem;
+                   margin-left: 0rem;
                }
-               .fonction{
-                   margin-left: 1rem;
+               .fonction h2{
+                   margin-left: 0rem;
                    
                }
             }
