@@ -67,7 +67,7 @@ p, h2 {
 }
 
 .container-menu {
-  animation: fadein 5s;
+  animation: fadein 1s;
   animation-name: slidein;
 }
 
@@ -197,7 +197,7 @@ main .container-menu {
   justify-content: space-between;
   width: 85%;
   height: 56px;
-  line-height: 0.5;
+  line-height: 0.8;
   box-shadow: 0 0 6px 3px #b1b1b14b;
   border-radius: 10px;
   padding: 0 1rem 0 0.5rem;
@@ -205,12 +205,19 @@ main .container-menu {
 }
 
 main .menu-label {
-  white-space: nowrap;
-  overflow: hidden;
+  width: 75%;
 }
 
-main p, main h2 {
+main .menu-label, main p, main h2 {
+  white-space: nowrap;
+  overflow: hidden;
   text-overflow: ellipsis;
+}
+
+main .prix {
+  margin-top: 1.2rem;
+  margin-left: 0.5rem;
+  min-width: 35px;
 }
 
 main .commander-btn {

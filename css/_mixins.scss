@@ -148,21 +148,26 @@ i.far{
     justify-content: space-between;
     width:85% ;
     height: 56px;
-    line-height: 0.5;
+    line-height: 0.8;
     box-shadow: 0 0 6px 3px #b1b1b14b;    
     border-radius: 10px;
     padding: 0 1rem 0 0.5rem;
     margin: 1.5rem 0.5rem 0 0.5rem;
-
-        }
-        .menu-label{
+ }
+ .menu-label{
+     width: 75%;
+ }
+        .menu-label,p,h2{
             white-space: nowrap;
             overflow: hidden;
+            text-overflow: ellipsis;
         }
-p,h2{
-   text-overflow: ellipsis;   
-}  
-
+       
+.prix{
+    margin-top: 1.2rem;
+    margin-left: 0.5rem;
+    min-width: 35px;
+}
  .menu-bloc {
 @extend %flex-center;
         }  
