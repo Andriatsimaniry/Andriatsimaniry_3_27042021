@@ -132,7 +132,7 @@ button:hover{
     padding: 2rem;
 }
 .fonction h2{
-    margin-left: 0rem;
+    margin-left: 1rem;
 }
 
 //  ========== IMAGES DES RESTAURANTS A L'ACCEUIL  ===========
@@ -247,7 +247,7 @@ footer{
                     margin-top: 2rem;
                     margin-right: 5rem;
                 }
-                .fonction{
+                .fonction h2{
                    margin-left: 20.5rem; 
                 }    
                 
@@ -293,8 +293,8 @@ footer{
                     margin-top: 2rem;
                     margin-right: 5rem;
                 }
-                .fonction{
-                  margin-left:27rem;
+                .fonction h2{
+                  margin-left: 28rem;
                 }    
                 
                   .restaurant{
@@ -315,7 +315,7 @@ footer{
 
                 }
                 .restaurant-box i.fa-heart{
-                    left: 50rem;
+                    left: 45rem;
                 }
                 .text{
                     margin-right: 30rem;
@@ -324,10 +324,14 @@ footer{
         }
 
        
-            @media screen and (min-width: 1200px){
+            @media screen and (min-width: 1025px){
                 body,html {
                     font-size: 24px;
                     height: 100vh;
+                }
+                .fonction h2{
+                    margin-left: 0rem;
+                    
                 }
                 .choix{
                     padding-left: 6rem;
@@ -345,10 +349,10 @@ footer{
                .restaurant-box{
                    margin-left: 0rem;
                }
-               .fonction h2{
-                   margin-left: 0rem;
-                   
+               i.fa-heart {
+                 left: 0rem;
                }
+               
             }
 
 //  === LOADING  SPINNER  ===========

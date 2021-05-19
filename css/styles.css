@@ -248,7 +248,7 @@ button:hover {
 }
 
 .fonction h2 {
-  margin-left: 0rem;
+  margin-left: 1rem;
 }
 
 .restaurant-box {
@@ -420,7 +420,7 @@ footer a {
     margin-top: 2rem;
     margin-right: 5rem;
   }
-  main .fonction {
+  main .fonction h2 {
     margin-left: 20.5rem;
   }
   main .restaurant {
@@ -459,8 +459,8 @@ footer a {
     margin-top: 2rem;
     margin-right: 5rem;
   }
-  main .fonction {
-    margin-left: 27rem;
+  main .fonction h2 {
+    margin-left: 28rem;
   }
   main .restaurant {
     display: flex;
@@ -478,17 +478,20 @@ footer a {
     margin: 1rem 3rem 0rem 2rem;
   }
   main .restaurant-box i.fa-heart {
-    left: 50rem;
+    left: 45rem;
   }
   main .text {
     margin-right: 30rem;
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1025px) {
   body, html {
     font-size: 24px;
     height: 100vh;
+  }
+  .fonction h2 {
+    margin-left: 0rem;
   }
   .choix {
     padding-left: 6rem;
@@ -504,8 +507,8 @@ footer a {
   .restaurant-box {
     margin-left: 0rem;
   }
-  .fonction h2 {
-    margin-left: 0rem;
+  i.fa-heart {
+    left: 0rem;
   }
 }
 /*# sourceMappingURL=styles.css.map */
