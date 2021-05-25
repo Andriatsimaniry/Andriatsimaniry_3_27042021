@@ -70,7 +70,7 @@ main{
             margin-left: 0rem;
             }
             .menu-name{
-                margin: 1rem 1rem 0rem 0;
+                margin: 1rem 1rem 0rem 1.2rem;
                 padding-right: 12rem;               
             }
             .menu-name::after{
@@ -170,7 +170,10 @@ button:hover{
                     margin-left: 30rem;
             }
             .menu-name{
-                margin-left:15rem;
+                margin-left:3.1rem;
+            }
+            .container-menu{
+                margin-left: 3rem;
             }
            
             }
