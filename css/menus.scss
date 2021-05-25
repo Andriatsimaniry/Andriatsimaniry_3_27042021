@@ -117,9 +117,13 @@ main{
 .commander-btn{
  @include boutton-commander;
  }       
-    
+ .menu-button{
+     display: flex;
+     justify-content: center;
+ }   
 
 }
+
 
  
  

@@ -234,6 +234,11 @@ main .commander-btn {
   background: linear-gradient(#ea6fa2b5, #9356DC);
 }
 
+main .menu-button {
+  display: flex;
+  justify-content: center;
+}
+
 footer {
   width: 100%;
   height: 73px;
