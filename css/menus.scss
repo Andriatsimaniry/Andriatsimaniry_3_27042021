@@ -4,7 +4,7 @@
 @import './_placeholders';
 @import './_animation';
 body,html{
-    width: 100%;
+width: 100%;
 font-family: $texte;
 display: flex;
 flex-direction: column;
@@ -33,6 +33,12 @@ font-family: $texte;
 font-weight: 100;
 font-size: 14px;
 }
+h4{
+    font-family: $texte;
+    font-size: 16px;
+    font-weight: 100;
+
+}
  // =============== EN TÊTE DES PAGES MENUS  ===========
 header{
     
@@ -44,20 +50,88 @@ height:40%;
  // ============== MAIN DES PAGES  MENUS ===============
 
 main{
-@include main-menu;
-width: 100%;
-height: 60%;
+    .menu-box{
+        font-family: $texte;
+        background-color: #fff;
+        margin:-4rem 0rem 0 0.1rem;
+        padding-right: 0.2rem;
+        height:auto;
+        width:100vw;
+        border-radius:40px 40px 0 0 ;
+        box-shadow: 0 0 6px 3px #b1b1b14b;
+        transition: box-shadow 0.2s;
+    }
+        .menu-titre{
+            font-family: $titre;
+            font-size: 22px;
+            padding-top: 1rem;
+            display: flex;
+            align-items: center;
+            margin-left: 0rem;
+            }
+            .menu-name{
+                margin: 1rem 1rem 0rem 0;
+                padding-right: 12rem;               
+            }
+            .menu-name::after{
+                content: "";
+                border-bottom: 2px solid #99e2d0;
+                display: block;
+                width: 40px;
+                margin-top: -1rem;
+                    }     
+        .menu-titre i.fa-heart{    
+            margin-left: 3rem; 
+        }   
+    .container-menu{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+    width:85% ;
+    height: 60px;
+    line-height: 0.8;
+    box-shadow: 0 0 6px 3px #b1b1b14b;    
+    border-radius: 10px;
+    padding: 0 1rem 0 0.5rem;
+    margin: 1rem 0.5rem 0 1rem;
+ }
+ .menu-label{
+     width: 75%;
+ }
+        .menu-label,p,h2{
+            white-space: nowrap;
+            overflow:inherit;
+            text-overflow: ellipsis;
+            line-height: 1rem;
+        }
+       
+.prix{
+    margin-top: 1.2rem;
+    margin-left: 0.5rem;
+    min-width: 35px;
+}
+ .menu-bloc {
+@extend %flex-center;
+        }  
+.commander-btn{
+ @include boutton-commander;
+ }       
+    
+
+}
 
  
- }
+ 
 
 //  =============  PIED DES PAGES MENUS  ============
 
 footer{
     @include pied-page;
     width: 100%;
-    height:auto;
-    margin-left: 0.5rem;
+    height:73px;
+    padding-left: .6rem;
+    
 }
 
 // ========== BOUTTON COMMANDER DES PAGES MENUS =========
@@ -87,7 +161,26 @@ button:hover{
         cursor: pointer;
         } 
         // ================  MEDIA  QUERIES  TABLETTES =========
-        @media screen and (min-width: 768px){
+        @media screen and (min-width: 576px) {
+            main{
+                .menu-titre{
+                    margin-left: 1rem;
+                }
+                .menu-titre i.fa-heart {
+                    margin-left: 30rem;
+            }
+            .menu-name{
+                margin-left:15rem;
+            }
+           
+            }
+            .pied{
+                text-align: center;
+        }    
+    }
+      
+      
+        @media screen and (min-width: 769px){
             header{
                 font-size: 18px;
                 .plat {
@@ -101,7 +194,7 @@ button:hover{
                 }
             }
             main{
-            font-size: 18px;
+            font-size: 16px;
             width: 100%;
                 
             .menu-box{
@@ -113,8 +206,14 @@ button:hover{
                left: 13rem;
            }
            .menu-titre i.far{
-            margin-left: 30rem;
+            margin-left: 44rem;
            }
+        }
+        .container-menu{
+            height: 70px;
+        }
+        .pied{
+            text-align: center;
         }
     }
 
@@ -124,19 +223,20 @@ button:hover{
  // =============== MEDIA DESKTOP ==========
         
 
-@media screen and (min-width: 1200px){
+@media screen and (min-width: 1025px){
 
     h1{
         font-size: 32px;
     }
     h2{
-        font-size: 22px;
+        font-size: 15px;
+        overflow:visible;
     }
     p{
-        font-size: 18px;
+        font-size: 16px;
     }
     header{
-        font-size: 22px;
+        font-size: 18px;
         .plat {
             width: 100vw;
             height: 320px;
@@ -157,12 +257,15 @@ button:hover{
        left: 28rem;
    }
    .menu-titre i.far{
-       margin-left: 60rem;
-  
+       margin-left: 60rem;  
 }
 .fa-heart::after{
     margin-left:-1.7rem;
 }
+}
+footer{
+    text-align: center;
+    height: 100px;
 }
 }
 

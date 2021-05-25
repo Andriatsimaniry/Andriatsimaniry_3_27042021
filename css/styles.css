@@ -138,6 +138,12 @@ a {
   text-decoration: none;
 }
 
+h3 {
+  font-family: "roboto", sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+}
+
 .siteheader {
   background-color: #ece6e64f;
   height: auto;
@@ -223,22 +229,27 @@ button:hover {
   top: 0.5em;
 }
 
+.choix-restaurant i.fas {
+  color: gray;
+  margin-right: 0.5rem;
+}
+
 .choix-restaurant:hover {
   box-shadow: 8px 8px 10px 0 rgba(0, 0, 0, 0.5);
   background-color: #e4d5f6;
+}
+
+.choix-restaurant:hover i.fas {
+  color: #9356DC;
 }
 
 .choix-restaurant h2 {
   font-size: 13px;
 }
 
-.choix-restaurant i.fas {
-  color: #9356DC;
-  margin-right: 0.5rem;
-}
-
 .restolabel {
   align-self: flex-start;
+  margin-left: -.8rem;
 }
 
 .restaurant {
@@ -247,7 +258,7 @@ button:hover {
   padding: 2rem;
 }
 
-.fonction h2 {
+.fonction h3 {
   margin-left: 1rem;
 }
 
@@ -319,8 +330,8 @@ button:hover {
 .restaurant-box .nouveau {
   position: absolute;
   background-color: #99E2D0;
-  top: 2rem;
-  right: 1rem;
+  top: .8rem;
+  right: .8rem;
   height: 40px;
   width: 100px;
   border: none;
@@ -347,16 +358,22 @@ footer .pied {
   background-color: #251f1f;
   font-family: "roboto", sans-serif;
   position: relative;
-  height: 80%;
-  width: 100%;
+  height: 135px;
+  width: auto;
   color: #fff;
-  padding: 0rem;
-  text-align: center;
+  padding-left: 1.5rem;
+  padding-top: 1rem;
+  line-height: 1.3rem;
 }
 
 footer .proposer {
   font-family: "roboto", sans-serif;
   font-size: 14px;
+  margin-top: 1rem;
+}
+
+footer i.fas.fa-utensils {
+  margin-right: .4rem;
 }
 
 footer .partenaire {
@@ -367,6 +384,7 @@ footer .partenaire {
 
 footer i.fa {
   transform: rotate(-45deg);
+  margin-right: .2rem;
 }
 
 footer .legale {
@@ -420,7 +438,7 @@ footer a {
     margin-top: 2rem;
     margin-right: 5rem;
   }
-  main .fonction h2 {
+  main .fonction h3 {
     margin-left: 20.5rem;
   }
   main .restaurant {
@@ -430,10 +448,8 @@ footer a {
     flex-grow: 1;
     margin-left: 0rem;
   }
-  main .restolabel {
-    position: absolute;
-    font-size: 22px;
-    top: 0rem;
+  main .restolabel h3 {
+    margin-left: 26rem;
   }
   main .restaurant-box {
     width: auto;
@@ -442,6 +458,9 @@ footer a {
   main .restaurant-box i.fa-heart {
     position: absolute;
     left: 34rem;
+  }
+  footer {
+    text-align: center;
   }
 }
 
@@ -459,7 +478,7 @@ footer a {
     margin-top: 2rem;
     margin-right: 5rem;
   }
-  main .fonction h2 {
+  main .fonction h3 {
     margin-left: 28rem;
   }
   main .restaurant {
@@ -469,10 +488,8 @@ footer a {
     flex-grow: 1;
     margin-left: 0rem;
   }
-  main .restolabel {
-    position: absolute;
-    font-size: 22px;
-    top: 0rem;
+  main .restolabel h3 {
+    margin-left: 28rem;
   }
   main .restaurant-box {
     margin: 1rem 3rem 0rem 2rem;
@@ -483,6 +500,9 @@ footer a {
   main .text {
     margin-right: 30rem;
   }
+  footer {
+    text-align: center;
+  }
 }
 
 @media screen and (min-width: 1025px) {
@@ -490,25 +510,32 @@ footer a {
     font-size: 24px;
     height: 100vh;
   }
-  .fonction h2 {
-    margin-left: 0rem;
+  body .fonction h3, html .fonction h3 {
+    margin-left: 27rem;
   }
-  .choix {
-    padding-left: 6rem;
+  body .choix, html .choix {
+    padding-left: 2rem;
   }
-  .choix-restaurant {
+  body .choix-restaurant, html .choix-restaurant {
     margin-right: 5rem;
     width: 250px;
   }
-  .restaurant {
+  body .restaurant, html .restaurant {
     background-color: #ece6e64f;
+    padding-left: 5rem;
+  }
+  body h3.restolabel, html h3.restolabel {
+    margin-right: 4rem;
+  }
+  body .restaurant-box, html .restaurant-box {
     margin-left: 0rem;
   }
-  .restaurant-box {
-    margin-left: 0rem;
-  }
-  i.fa-heart {
+  body i.fa-heart, html i.fa-heart {
     left: 0rem;
+  }
+  body .pied, html .pied {
+    text-align: center;
+    line-height: 0.8rem;
   }
 }
 /*# sourceMappingURL=styles.css.map */

@@ -32,6 +32,11 @@ h2{
 @extend %titre2;
 
 }
+h3{
+    font-family: $texte;
+    font-size: 16px;
+    font-weight: bold;
+}
 p {
     
 @extend %paragraphe;
@@ -110,19 +115,26 @@ button:hover{
     margin-bottom: 1rem;
     @include button;
 }
+.choix-restaurant i.fas{
+    color:gray;
+    margin-right: 0.5rem;
+}
       .choix-restaurant:hover{
         box-shadow: 8px 8px 10px 0 rgba(0,0,0,0.5);
         background-color: $light;
       }
+      .choix-restaurant:hover  i.fas{
+        color:$primaire;
+        
+    
+      }
       .choix-restaurant h2{
           font-size: 13px;
       }
-      .choix-restaurant i.fas{
-        color:$primaire;
-        margin-right: 0.5rem;
-    }
+     
 .restolabel{
     align-self: flex-start;
+    margin-left: -.8rem;
 }
 
 .restaurant{
@@ -131,7 +143,7 @@ button:hover{
     position: relative;
     padding: 2rem;
 }
-.fonction h2{
+.fonction h3{
     margin-left: 1rem;
 }
 
@@ -185,8 +197,8 @@ button:hover{
 .nouveau{
     position: absolute;
     background-color: $tertiaire;
-    top: 2rem; 
-    right: 1rem;
+    top: .8rem; 
+    right: .8rem;
     height: 40px;
     width: 100px;
     border: none;
@@ -247,7 +259,7 @@ footer{
                     margin-top: 2rem;
                     margin-right: 5rem;
                 }
-                .fonction h2{
+                .fonction h3{
                    margin-left: 20.5rem; 
                 }    
                 
@@ -258,10 +270,9 @@ footer{
                     flex-grow: 1;
                     margin-left: 0rem;
                 }
-                .restolabel {
-                    position: absolute;
-                    font-size: 22px;
-                    top: 0rem;
+                .restolabel h3 {
+                    margin-left: 26rem;
+                   
                 }
                 
                 .restaurant-box {
@@ -274,7 +285,11 @@ footer{
                     left: 34rem;
                 }
             }
+            footer{
+                text-align: center;
+            }
         }
+ 
 
             
             
@@ -293,7 +308,7 @@ footer{
                     margin-top: 2rem;
                     margin-right: 5rem;
                 }
-                .fonction h2{
+                .fonction h3{
                   margin-left: 28rem;
                 }    
                 
@@ -304,10 +319,8 @@ footer{
                     flex-grow: 1;
                     margin-left: 0rem;
                 }
-                .restolabel {
-                    position: absolute;
-                    font-size: 22px;
-                    top: 0rem;
+                .restolabel h3 {
+                    margin-left: 28rem;
                 }
                 
                 .restaurant-box {
@@ -321,20 +334,21 @@ footer{
                     margin-right: 30rem;
                 }
             }
+            footer{
+                text-align: center;
+            }
         }
-
-       
             @media screen and (min-width: 1025px){
                 body,html {
                     font-size: 24px;
                     height: 100vh;
-                }
-                .fonction h2{
-                    margin-left: 0rem;
-                    
-                }
+                    .fonction h3{
+                        margin-left: 27rem;
+                        
+                    }
+               
                 .choix{
-                    padding-left: 6rem;
+                    padding-left: 2rem;
                     
                 }
                .choix-restaurant{
@@ -344,16 +358,24 @@ footer{
                .restaurant{
                    
                    background-color: $fond-clair;
-                   margin-left: 0rem;
+                   padding-left:5rem;
                }
+              h3.restolabel {
+                margin-right: 4rem;
+            }
                .restaurant-box{
                    margin-left: 0rem;
                }
                i.fa-heart {
                  left: 0rem;
                }
-               
+               .pied{
+                text-align: center;
+                line-height: 0.8rem;
             }
+        }
+     }
+            
 
-//  === LOADING  SPINNER  ===========
+
 
